@@ -12,36 +12,43 @@ export default function ServicesPage() {
       id: "freight-forwarding",
       title: t("servicesPage.services.freightForwarding.title"),
       description: t("servicesPage.services.freightForwarding.description"),
-      image: "/Tronton With Load Hd_.jpg",
+      image: "/Tronton With Load Hd_.webp",
       features: t("servicesPage.services.freightForwarding.features"),
     },
     {
       id: "truck-rental",
       title: t("servicesPage.services.truckRental.title"),
       description: t("servicesPage.services.truckRental.description"),
-      image: "/Truck Fuso .jpg",
+      image: "/Truck Fuso .webp",
       features: t("servicesPage.services.truckRental.features"),
     },
     {
       id: "ship-rental",
       title: t("servicesPage.services.shipRental.title"),
       description: t("servicesPage.services.shipRental.description"),
-      image: "/Kapal Cargo Stock Photo.jpg",
+      image: "/Kapal Cargo Stock Photo.webp",
       features: t("servicesPage.services.shipRental.features"),
     },
     {
       id: "export-import",
       title: t("servicesPage.services.exportImport.title"),
       description: t("servicesPage.services.exportImport.description"),
-      image: "/Tronton 1 with Container on.jpg",
+      image: "/Tronton 1 with Container on.webp",
       features: t("servicesPage.services.exportImport.features"),
     },
     {
       id: "domestic-shipping",
       title: t("servicesPage.services.domesticShipping.title"),
       description: t("servicesPage.services.domesticShipping.description"),
-      image: "/Tronton Isuzu With Cargo.jpg",
+      image: "/Tronton Isuzu With Cargo.webp",
       features: t("servicesPage.services.domesticShipping.features"),
+    },
+    {
+      id: "roro-shipping",
+      title: t("servicesPage.services.roroShipping.title"),
+      description: t("servicesPage.services.roroShipping.description"),
+      image: "/Kapal lct.webp",
+      features: t("servicesPage.services.roroShipping.features"),
     }
   ];
 

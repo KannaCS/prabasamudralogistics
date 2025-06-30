@@ -541,7 +541,7 @@ export const id = {
       },
       domesticShipping: {
         title: "Pengiriman Domestik",
-        description: "Layanan pengiriman barang ke seluruh Indonesia dengan armada yang andal. Kami menawarkan solusi pengiriman yang efisien dan terjangkau untuk berbagai jenis dan ukuran barang.",
+        description: "Layanan pengiriman barang ke seluruh wilayah Indonesia dengan armada yang handal. Kami menawarkan solusi pengiriman yang efisien dan terjangkau untuk berbagai jenis dan ukuran barang.",
         features: [
           "Jangkauan ke seluruh Indonesia",
           "Pengiriman reguler dan ekspres",
@@ -638,6 +638,129 @@ export const id = {
         },
         ctaTitle: "Kirim Barang Anda Sekarang!",
         ctaSubtitle: "Hubungi tim kami untuk mendapatkan penawaran harga terbaik atau booking layanan pengiriman domestik sekarang."
+      },
+      roroShipping: {
+        title: "Jasa Pengiriman Kendaraan dan Kargo via Kapal Ro-Ro Antar Pulau",
+        description: "Kami menyediakan layanan pengiriman kendaraan dan kargo menggunakan kapal Ro-Ro (Roll-On Roll-Off) untuk rute antar pelabuhan di seluruh Indonesia. Kapal Ro-Ro memungkinkan kendaraan dan barang masuk langsung ke kapal tanpa alat berat, menjadikannya pilihan efisien, cepat, dan aman.",
+        features: [
+          "Bongkar muat kendaraan yang efisien",
+          "Pengiriman aman untuk mobil pribadi, truk, dan motor",
+          "Kemampuan pengiriman alat berat",
+          "Jadwal pengiriman rutin",
+          "Tim penanganan profesional",
+          "Solusi logistik hemat biaya"
+        ],
+        heroSubtitle: "Solusi pengiriman kendaraan dan kargo antar pulau yang efisien dan aman menggunakan kapal Roll-On Roll-Off.",
+        aboutTitle: "Tentang Jasa Pengiriman Kendaraan dan Kargo via Kapal Ro-Ro",
+        aboutContent1: "PT. Praba Samudra Logistics menyediakan layanan khusus pengiriman kendaraan dan kargo menggunakan kapal Ro-Ro (Roll-On Roll-Off) untuk rute antar pelabuhan di seluruh Indonesia. Kapal Ro-Ro memungkinkan kendaraan dan kargo dapat langsung dikendarai naik ke kapal tanpa memerlukan alat pengangkat berat, menjadikannya metode pengiriman yang efisien, cepat, dan aman.",
+        aboutContent2: "Kami melayani pengiriman mobil pribadi, truk, motor, alat berat, hingga general cargo dengan dukungan jadwal pengiriman rutin dan tim profesional. Layanan kami praktis, hemat biaya, dan terpercaya untuk semua kebutuhan transportasi kendaraan dan kargo antar pulau Anda.",
+        cargoTypesTitle: "Jenis Kendaraan & Kargo yang Bisa Dikirim",
+        cargoTypesTable: {
+          type: "Jenis Muatan",
+          examples: "Contoh Barang",
+          notes: "Keterangan"
+        },
+        cargoTypes: {
+          personalVehicles: {
+            type: "Mobil Pribadi",
+            examples: "Sedan, MPV, SUV",
+            notes: "Dikendarai langsung naik ke kapal"
+          },
+          motorcycles: {
+            type: "Sepeda Motor",
+            examples: "Semua jenis motor",
+            notes: "Diikat dan diamankan sesuai prosedur"
+          },
+          trucksAndBuses: {
+            type: "Truk & Bus",
+            examples: "Truk kecil, tronton, bus pariwisata",
+            notes: "Wajib dalam kondisi jalan normal"
+          },
+          heavyEquipment: {
+            type: "Alat Berat",
+            examples: "Excavator, Loader, Forklift",
+            notes: "Ukuran disesuaikan dengan deck kapal"
+          },
+          generalCargo: {
+            type: "General Cargo",
+            examples: "Palet, peti kemas, logistik proyek",
+            notes: "Harus dapat digerakkan atau didorong manual"
+          }
+        },
+        routesTitle: "Estimasi Waktu & Tarif Pengiriman",
+        routesDescription: "Kami menawarkan layanan pengiriman Ro-Ro reguler pada berbagai rute antar pelabuhan di Indonesia. Berikut adalah beberapa rute umum dengan perkiraan waktu pengiriman dan tarif untuk referensi:",
+        routesTable: {
+          route: "Rute Pengiriman",
+          time: "Estimasi Waktu",
+          price: "Estimasi Tarif (Mobil Kecil)"
+        },
+        routes: {
+          jakartaSurabaya: {
+            route: "Tanjung Priok – Surabaya",
+            time: "2–3 hari",
+            price: "Rp 2.500.000 – Rp 3.000.000"
+          },
+          surabayaMakassar: {
+            route: "Surabaya – Makassar",
+            time: "2–4 hari",
+            price: "Rp 3.500.000 – Rp 4.500.000"
+          },
+          jakartaBatam: {
+            route: "Tanjung Priok – Batam",
+            time: "2–3 hari",
+            price: "Rp 3.000.000 – Rp 4.000.000"
+          },
+          jakartaBalikpapan: {
+            route: "Jakarta – Balikpapan",
+            time: "3–5 hari",
+            price: "Rp 4.500.000 – Rp 6.000.000"
+          }
+        },
+        priceDisclaimer: "Harga dapat berubah tergantung musim, ukuran kendaraan, dan jenis muatan. Silakan hubungi tim kami untuk estimasi terbaru.",
+        benefitsTitle: "Keunggulan Layanan Ro-Ro Kami",
+        benefits: {
+          efficiency: {
+            title: "Efisiensi",
+            description: "Proses bongkar muat yang cepat menghemat waktu dibandingkan pengiriman kontainer tradisional."
+          },
+          safety: {
+            title: "Keamanan",
+            description: "Sistem pengamanan khusus memastikan kendaraan dan kargo Anda tiba dalam kondisi sempurna."
+          },
+          costEffective: {
+            title: "Hemat Biaya",
+            description: "Tarif kompetitif menjadikan pengiriman Ro-Ro pilihan ekonomis untuk transportasi kendaraan."
+          },
+          expertise: {
+            title: "Keahlian",
+            description: "Tim berpengalaman kami menangani semua dokumentasi dan persyaratan logistik untuk pengiriman yang lancar."
+          }
+        },
+        faqsTitle: "Pertanyaan yang Sering Diajukan",
+        faqs: {
+          whatIsRoRo: {
+            question: "Apa itu pengiriman Ro-Ro?",
+            answer: "Ro-Ro (Roll-On Roll-Off) adalah metode pengiriman dimana kendaraan dan kargo dapat dikendarai atau didorong langsung naik dan turun kapal menggunakan ramp bawaan, menghilangkan kebutuhan akan crane atau alat pengangkat lainnya."
+          },
+          vehiclePreparation: {
+            question: "Bagaimana cara mempersiapkan kendaraan saya untuk pengiriman?",
+            answer: "Pastikan kendaraan Anda dalam kondisi baik, memiliki bahan bakar minimal (1/4 tangki), keluarkan barang pribadi dan barang berharga, dokumentasikan kerusakan yang ada, dan sediakan semua dokumentasi yang diperlukan termasuk STNK dan bukti kepemilikan."
+          },
+          timeEstimation: {
+            question: "Berapa lama waktu pengiriman Ro-Ro antar pulau?",
+            answer: "Waktu pengiriman bervariasi tergantung rute, namun biasanya berkisar antara 2-7 hari tergantung jarak antar pelabuhan, kondisi cuaca, dan pemberhentian terjadwal di sepanjang perjalanan."
+          },
+          insurance: {
+            question: "Apakah asuransi termasuk dalam biaya pengiriman?",
+            answer: "Asuransi dasar sudah termasuk dalam tarif standar kami, tetapi kami menyarankan asuransi komprehensif tambahan untuk kendaraan bernilai tinggi. Tim kami dapat membantu Anda mengatur perlindungan yang sesuai untuk kebutuhan spesifik Anda."
+          },
+          documentation: {
+            question: "Dokumen apa yang saya perlukan untuk mengirim kendaraan?",
+            answer: "Dokumen yang diperlukan biasanya meliputi STNK, bukti kepemilikan (BPKB), identitas pribadi, dan izin yang diperlukan untuk transportasi antar pulau. Tim kami akan memandu Anda melalui persyaratan spesifik untuk pengiriman Anda."
+          }
+        },
+        ctaTitle: "Siap Mengirim Kendaraan Anda?",
+        ctaDescription: "Hubungi tim kami hari ini untuk mendapatkan penawaran khusus untuk kebutuhan pengiriman kendaraan atau kargo Anda. Kami akan membantu Anda mengatur transportasi yang lancar menggunakan layanan pengiriman Ro-Ro kami yang andal."
       }
     },
     cta: {

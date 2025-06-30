@@ -7,9 +7,19 @@ export function Sidebar() {
   const router = useRouter();
   const pathname = usePathname();
   
-  const handleLogout = () => {
-    localStorage.removeItem("adminLoggedIn");
-    router.push("/admin");
+  const handleLogout = async () => {
+    try {
+      // Panggil API untuk logout
+      await fetch('/api/admin/auth/logout', {
+        method: 'POST',
+      });
+      
+      router.push("/admin");
+    } catch (error) {
+      console.error("Logout error:", error);
+      // Jika terjadi error, tetap arahkan ke halaman login
+      router.push("/admin");
+    }
   };
   
   const isActive = (path: string) => {

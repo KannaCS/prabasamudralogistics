@@ -541,14 +541,14 @@ export const en = {
       },
       domesticShipping: {
         title: "Domestic Shipping",
-        description: "Goods delivery services throughout Indonesia with a reliable fleet. We offer efficient and affordable shipping solutions for various types and sizes of goods.",
+        description: "Reliable and efficient shipping services across Indonesia covering all major islands and regions with various transportation modes including sea, land, and air to meet your domestic logistics needs.",
         features: [
-          "Coverage throughout Indonesia",
-          "Regular and express delivery",
-          "Shipment status tracking",
-          "Pick-up service",
-          "Professional packaging",
-          "Shipping insurance"
+          "Coverage to all major cities and regions",
+          "Express and regular shipping options",
+          "Various cargo size handling",
+          "Door-to-door service",
+          "Real-time tracking system",
+          "Warehousing and distribution"
         ],
         heroSubtitle: "Goods delivery services throughout Indonesia with various transportation mode options for your logistics needs.",
         aboutTitle: "About Domestic Shipping Services",
@@ -638,6 +638,129 @@ export const en = {
         },
         ctaTitle: "Ship Your Goods Now!",
         ctaSubtitle: "Contact our team to get the best price quote or book domestic shipping services now."
+      },
+      roroShipping: {
+        title: "Vehicle & Cargo Shipping via Ro-Ro Ships",
+        description: "We provide vehicle and cargo shipping services using Ro-Ro (Roll-On Roll-Off) ships for inter-island routes throughout Indonesia. Ro-Ro ships allow vehicles and goods to be directly driven onto the vessel without heavy equipment, making it an efficient, fast, and secure option.",
+        features: [
+          "Efficient vehicle loading and unloading",
+          "Secure transportation of private cars, trucks, and motorcycles",
+          "Heavy equipment shipping capabilities",
+          "Regular shipping schedules",
+          "Professional handling team",
+          "Cost-effective logistics solution"
+        ],
+        heroSubtitle: "Efficient and secure inter-island vehicle and cargo shipping solutions using Roll-On Roll-Off vessels.",
+        aboutTitle: "About Vehicle & Cargo Shipping via Ro-Ro Ships",
+        aboutContent1: "PT. Praba Samudra Logistics provides specialized vehicle and cargo shipping services using Ro-Ro (Roll-On Roll-Off) ships for routes between ports across Indonesia. Ro-Ro vessels allow vehicles and cargo to be driven directly onto the ship without requiring heavy lifting equipment, making it an efficient, quick, and secure shipping method.",
+        aboutContent2: "We handle the shipping of private vehicles, trucks, motorcycles, heavy equipment, and general cargo with the support of regular shipping schedules and a professional team. Our service is practical, cost-effective, and reliable for all your inter-island vehicle and cargo transportation needs.",
+        cargoTypesTitle: "Types of Vehicles & Cargo We Can Ship",
+        cargoTypesTable: {
+          type: "Cargo Type",
+          examples: "Examples",
+          notes: "Notes"
+        },
+        cargoTypes: {
+          personalVehicles: {
+            type: "Personal Vehicles",
+            examples: "Sedan, MPV, SUV",
+            notes: "Driven directly onto the vessel"
+          },
+          motorcycles: {
+            type: "Motorcycles",
+            examples: "All types of motorcycles",
+            notes: "Secured according to proper procedures"
+          },
+          trucksAndBuses: {
+            type: "Trucks & Buses",
+            examples: "Small trucks, trontons, tour buses",
+            notes: "Must be in normal driving condition"
+          },
+          heavyEquipment: {
+            type: "Heavy Equipment",
+            examples: "Excavator, Loader, Forklift",
+            notes: "Size must be suitable for ship deck"
+          },
+          generalCargo: {
+            type: "General Cargo",
+            examples: "Pallets, containers, project logistics",
+            notes: "Must be manually movable or pushable"
+          }
+        },
+        routesTitle: "Shipping Time & Rate Estimates",
+        routesDescription: "We offer regular Ro-Ro shipping services on various routes between Indonesian ports. Below are some common routes with estimated delivery times and rates for reference:",
+        routesTable: {
+          route: "Shipping Route",
+          time: "Estimated Time",
+          price: "Estimated Rate (Small Car)"
+        },
+        routes: {
+          jakartaSurabaya: {
+            route: "Tanjung Priok – Surabaya",
+            time: "2–3 days",
+            price: "Rp 2,500,000 – Rp 3,000,000"
+          },
+          surabayaMakassar: {
+            route: "Surabaya – Makassar",
+            time: "2–4 days",
+            price: "Rp 3,500,000 – Rp 4,500,000"
+          },
+          jakartaBatam: {
+            route: "Tanjung Priok – Batam",
+            time: "2–3 days",
+            price: "Rp 3,000,000 – Rp 4,000,000"
+          },
+          jakartaBalikpapan: {
+            route: "Jakarta – Balikpapan",
+            time: "3–5 days",
+            price: "Rp 4,500,000 – Rp 6,000,000"
+          }
+        },
+        priceDisclaimer: "Prices may vary depending on season, vehicle size, and cargo type. Please contact our team for the latest estimates.",
+        benefitsTitle: "Benefits of Our Ro-Ro Shipping Service",
+        benefits: {
+          efficiency: {
+            title: "Efficiency",
+            description: "Quick loading and unloading process saves time compared to traditional container shipping."
+          },
+          safety: {
+            title: "Safety",
+            description: "Specialized securing systems ensure your vehicles and cargo arrive in perfect condition."
+          },
+          costEffective: {
+            title: "Cost-Effective",
+            description: "Competitive rates make Ro-Ro shipping an economical choice for vehicle transportation."
+          },
+          expertise: {
+            title: "Expertise",
+            description: "Our experienced team handles all documentation and logistical requirements for smooth shipping."
+          }
+        },
+        faqsTitle: "Frequently Asked Questions",
+        faqs: {
+          whatIsRoRo: {
+            question: "What is Ro-Ro shipping?",
+            answer: "Ro-Ro (Roll-On Roll-Off) shipping is a method where vehicles and cargo can be driven or rolled directly onto and off the vessel using built-in ramps, eliminating the need for cranes or other lifting equipment."
+          },
+          vehiclePreparation: {
+            question: "How should I prepare my vehicle for shipping?",
+            answer: "Ensure your vehicle is in working condition, has minimal fuel (1/4 tank), remove personal belongings and valuables, document any existing damage, and provide all necessary documentation including registration and proof of ownership."
+          },
+          timeEstimation: {
+            question: "How long does inter-island Ro-Ro shipping take?",
+            answer: "Shipping times vary by route, but typically range from 2-7 days depending on the distance between ports, weather conditions, and scheduled stops along the way."
+          },
+          insurance: {
+            question: "Is insurance included in the shipping cost?",
+            answer: "Basic insurance is included in our standard rates, but we recommend additional comprehensive insurance for high-value vehicles. Our team can assist you with arranging appropriate coverage for your specific needs."
+          },
+          documentation: {
+            question: "What documents do I need for shipping my vehicle?",
+            answer: "Required documents typically include vehicle registration (STNK), proof of ownership (BPKB), personal identification, and any permits required for inter-island transportation. Our team will guide you through the specific requirements for your shipment."
+          }
+        },
+        ctaTitle: "Ready to Ship Your Vehicle?",
+        ctaDescription: "Contact our team today to get a personalized quote for your vehicle or cargo shipping needs. We'll help you arrange seamless transportation using our reliable Ro-Ro shipping service."
       }
     },
     cta: {

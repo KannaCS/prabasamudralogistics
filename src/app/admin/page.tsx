@@ -16,16 +16,24 @@ export default function AdminLoginPage() {
     setIsLoading(true);
 
     try {
-      // Validasi login sederhana (dalam aplikasi nyata, gunakan autentikasi yang lebih aman)
-      if (username === "admin" && password === "admin123") {
-        // Simpan status login di localStorage
-        localStorage.setItem("adminLoggedIn", "true");
-        router.push("/admin/dashboard");
-      } else {
-        setError("Username atau password salah");
+      const response = await fetch('/api/admin/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Login failed');
       }
-    } catch (error) {
-      setError("Terjadi kesalahan saat login");
+
+      // Login berhasil, redirect ke dashboard
+      router.push("/admin/dashboard");
+    } catch (error: any) {
+      setError(error.message || "Terjadi kesalahan saat login");
       console.error("Login error:", error);
     } finally {
       setIsLoading(false);

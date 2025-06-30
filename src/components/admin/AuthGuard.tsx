@@ -13,16 +13,26 @@ export function AuthGuard({ children }: AuthGuardProps) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Cek apakah user sudah login
-    const isLoggedIn = localStorage.getItem("adminLoggedIn") === "true";
-    
-    if (!isLoggedIn) {
-      router.push("/admin");
-    } else {
-      setIsAuthenticated(true);
-    }
-    
-    setIsLoading(false);
+    // Fungsi untuk memeriksa status autentikasi
+    const checkAuth = async () => {
+      try {
+        // Buat request ke endpoint khusus untuk memeriksa autentikasi
+        const response = await fetch('/api/admin/auth/verify');
+        
+        if (response.ok) {
+          setIsAuthenticated(true);
+        } else {
+          router.push("/admin");
+        }
+      } catch (error) {
+        console.error("Auth verification error:", error);
+        router.push("/admin");
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    checkAuth();
   }, [router]);
 
   if (isLoading) {

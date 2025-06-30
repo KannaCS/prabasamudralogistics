@@ -11,22 +11,22 @@ export default function DomesticShippingPage() {
     {
       title: t("servicesPage.services.domesticShipping.servicesList.landShipping.title"),
       description: t("servicesPage.services.domesticShipping.servicesList.landShipping.description"),
-      image: "/Tronton Isuzu With Cargo.jpg"
+      image: "/Tronton Isuzu With Cargo.webp"
     },
     {
       title: t("servicesPage.services.domesticShipping.servicesList.seaShipping.title"),
       description: t("servicesPage.services.domesticShipping.servicesList.seaShipping.description"),
-      image: "/Kapal Cargo Container HD.jpg"
+      image: "/Kapal Cargo Container HD.webp"
     },
     {
       title: t("servicesPage.services.domesticShipping.servicesList.airShipping.title"),
       description: t("servicesPage.services.domesticShipping.servicesList.airShipping.description"),
-      image: "/Forktift Loading Into Truck ,.jpg"
+      image: "/Forktift Loading Into Truck ,.webp"
     },
     {
       title: t("servicesPage.services.domesticShipping.servicesList.projectCargo.title"),
       description: t("servicesPage.services.domesticShipping.servicesList.projectCargo.description"),
-      image: "/Trailer With Load.jpg"
+      image: "/Trailer With Load.webp"
     }
   ];
 
@@ -110,7 +110,7 @@ export default function DomesticShippingPage() {
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full">
             <Image 
-              src="/Kapal Cargo Stock Photo.jpg" 
+              src="/Kapal Cargo Stock Photo.webp" 
               alt={t("servicesPage.services.domesticShipping.title")}
               fill
               className="object-cover"
