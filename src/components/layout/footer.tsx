@@ -103,8 +103,8 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">{t("footer.contact")}</h3>
             <address className="not-italic">
-              <p className="mb-2">PT. Praba Samudra Logistic</p>
-              <p className="mb-2">Jalan Raya Kelapa Hybrida Blok PF18 No.23, Pegangsaan Dua, Kelapa Gading, RT.011/RW.0124 14250 Daerah Khusus Ibukota Jakarta Indonesia</p>
+              <p className="mb-2">PT. Praba Samudra Logistics</p>
+              <p className="mb-2">Jalan Raya Kelapa Hybrida Blok PF18 No.30, Pegangsaan Dua, Kelapa Gading, RT.011/RW.012 14250 Daerah Khusus Ibukota Jakarta Indonesia</p>
               <p className="mb-2">
                 <span className="font-semibold">{t("footer.email")}:</span>{" "}
                 <a href="mailto:ops@prabasamudralogistics.com" className="hover:text-secondary block">
@@ -113,11 +113,17 @@ export default function Footer() {
                 <a href="mailto:marketing@prabasamudralogistics.com" className="hover:text-secondary block">
                   marketing@prabasamudralogistics.com
                 </a>
+                <a href="mailto:prabasamudralogistics@gmail.com" className="hover:text-secondary block">
+                  prabasamudralogistics@gmail.com
+                </a>
               </p>
               <p className="mb-2">
                 <span className="font-semibold">{t("footer.phone")}:</span>{" "}
-                <a href="tel:+6287781209022" className="hover:text-secondary">
+                <a href="tel:+6287781209022" className="hover:text-secondary block">
                   +62 877-8120-9022
+                </a>
+                <a href="tel:+6281806000469" className="hover:text-secondary block">
+                  +62 818-06000-469
                 </a>
               </p>
             </address>

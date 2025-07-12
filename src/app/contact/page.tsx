@@ -91,7 +91,7 @@ export default function ContactPage() {
                   </div>
                   <div className="ml-3">
                     <h3 className="font-semibold">{t("contactPage.address")}</h3>
-                    <p className="text-gray-600">Jalan Raya Kelapa Hybrida Blok PF18 No.23, Pegangsaan Dua, Kelapa Gading, RT.011/RW.0124 14250 Daerah Khusus Ibukota Jakarta Indonesia</p>
+                    <p className="text-gray-600">Jalan Raya Kelapa Hybrida Blok PF18 No.30, Pegangsaan Dua, Kelapa Gading, RT.011/RW.012 14250 Daerah Khusus Ibukota Jakarta Indonesia</p>
                   </div>
                 </div>
                 
@@ -106,6 +106,7 @@ export default function ContactPage() {
                     <p className="text-gray-600">
                       <a href="mailto:ops@prabasamudralogistics.com" className="hover:text-primary block">ops@prabasamudralogistics.com</a>
                       <a href="mailto:marketing@prabasamudralogistics.com" className="hover:text-primary block">marketing@prabasamudralogistics.com</a>
+                      <a href="mailto:prabasamudralogistics@gmail.com" className="hover:text-primary block">prabasamudralogistics@gmail.com</a>
                     </p>
                   </div>
                 </div>
@@ -119,8 +120,11 @@ export default function ContactPage() {
                   <div className="ml-3">
                     <h3 className="font-semibold">{t("contactPage.phone")}</h3>
                     <p className="text-gray-600">
-                      <a href="tel:+6287781209022" className="hover:text-primary">
+                      <a href="tel:+6287781209022" className="hover:text-primary block">
                         +62 877-8120-9022
+                      </a>
+                      <a href="tel:+6281806000469" className="hover:text-primary block">
+                        +62 818-06000-469
                       </a>
                     </p>
                   </div>
@@ -286,7 +290,7 @@ export default function ContactPage() {
             <h2 className="text-2xl font-semibold mb-6 text-center">{t("contactPage.location")}</h2>
             <div className="rounded-lg overflow-hidden shadow-md h-96">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8646621540766!2d106.9381133!3d-6.1467378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698adaaaaaaaab%3A0xfe51deea11a73b7a!2sJl.%20Raya%20Kelapa%20Hybrida%20Blok%20PF18%20No.23%2C%20RT.11%2FRW.24%2C%20Pegangsaan%20Dua%2C%20Kec.%20Klp.%20Gading%2C%20Kota%20Jkt%20Utara%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2014250!5e0!3m2!1sen!2sid!4v1657786361412!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8646621540766!2d106.9381133!3d-6.1467378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698adaaaaaaaab%3A0xfe51deea11a73b7a!2sJl.%20Raya%20Kelapa%20Hybrida%20Blok%20PF18%20No.30%2C%20RT.11%2FRW.12%2C%20Pegangsaan%20Dua%2C%20Kec.%20Klp.%20Gading%2C%20Kota%20Jkt%20Utara%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2014250!5e0!3m2!1sen!2sid!4v1657786361412!5m2!1sen!2sid"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

@@ -38,7 +38,7 @@ export default function Home() {
             <div className="md:w-1/2">
               <div className="relative w-full h-80 md:h-96">
                 <Image
-                  src="/gambarkapalpraba.png"
+                  src="/gambarkapalpraba.webp"
                   alt="Praba Samudra Logistics Services"
                   fill
                   className="object-cover rounded-lg"

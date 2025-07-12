@@ -22,7 +22,7 @@ export default function Header() {
           <Link href="/" className="flex items-center">
             <div className="relative w-10 h-10 mr-2">
               <Image 
-                src="/logo.png" 
+                src="/logo.webp" 
                 alt="PRABA SAMUDRA LOGISTICS" 
                 fill 
                 className="object-contain"
