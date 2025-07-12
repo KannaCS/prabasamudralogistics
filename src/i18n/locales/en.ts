@@ -761,6 +761,18 @@ export const en = {
         },
         ctaTitle: "Ready to Ship Your Vehicle?",
         ctaDescription: "Contact our team today to get a personalized quote for your vehicle or cargo shipping needs. We'll help you arrange seamless transportation using our reliable Ro-Ro shipping service."
+      },
+      vehicleShipping: {
+        title: "Vehicle Shipping via Ship",
+        description: "Vehicle shipping services via ship with CY-CY (Container Yard to Container Yard) basis to various routes in Indonesia.",
+        features: [
+          "Motorcycle and car shipping",
+          "Various domestic routes",
+          "Accurate time estimates",
+          "Competitive pricing",
+          "Professional handling",
+          "Shipment tracking"
+        ]
       }
     },
     cta: {

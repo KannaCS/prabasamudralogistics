@@ -761,6 +761,18 @@ export const id = {
         },
         ctaTitle: "Siap Mengirim Kendaraan Anda?",
         ctaDescription: "Hubungi tim kami hari ini untuk mendapatkan penawaran khusus untuk kebutuhan pengiriman kendaraan atau kargo Anda. Kami akan membantu Anda mengatur transportasi yang lancar menggunakan layanan pengiriman Ro-Ro kami yang andal."
+      },
+      vehicleShipping: {
+        title: "Pengiriman Kendaraan via Kapal",
+        description: "Layanan pengiriman kendaraan bermotor melalui kapal dengan basis CY-CY (Container Yard to Container Yard) ke berbagai rute di Indonesia.",
+        features: [
+          "Pengiriman motor dan mobil",
+          "Berbagai rute domestik",
+          "Estimasi waktu yang akurat",
+          "Harga kompetitif",
+          "Penanganan profesional",
+          "Pelacakan pengiriman"
+        ]
       }
     },
     cta: {

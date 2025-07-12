@@ -49,6 +49,13 @@ export default function ServicesPage() {
       description: t("servicesPage.services.roroShipping.description"),
       image: "/Kapal lct.webp",
       features: t("servicesPage.services.roroShipping.features"),
+    },
+    {
+      id: "vehicle-shipping",
+      title: t("servicesPage.services.vehicleShipping.title"),
+      description: t("servicesPage.services.vehicleShipping.description"),
+      image: "/Trailer Hino .webp",
+      features: t("servicesPage.services.vehicleShipping.features"),
     }
   ];
 
