@@ -16,10 +16,6 @@ const nextConfig = {
     // Ignores any ESLint errors during the build
     ignoreDuringBuilds: true
   },
-  // For static exports in App Router
-  experimental: {
-    appDir: true
-  },
   // Ensure proper directory structure for static export
   trailingSlash: true,
   // Ensure proper handling of nested routes
