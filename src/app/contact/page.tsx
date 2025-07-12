@@ -290,7 +290,7 @@ export default function ContactPage() {
             <h2 className="text-2xl font-semibold mb-6 text-center">{t("contactPage.location")}</h2>
             <div className="rounded-lg overflow-hidden shadow-md h-96">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8646621540766!2d106.9381133!3d-6.1467378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698adaaaaaaaab%3A0xfe51deea11a73b7a!2sJl.%20Raya%20Kelapa%20Hybrida%20Blok%20PF18%20No.30%2C%20RT.11%2FRW.12%2C%20Pegangsaan%20Dua%2C%20Kec.%20Klp.%20Gading%2C%20Kota%20Jkt%20Utara%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2014250!5e0!3m2!1sen!2sid!4v1657786361412!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8646621540766!2d106.91451609999999!3d-6.148782899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa010abd0363562e9%3A0xdbce869e99645f1e!2sPT.Praba%20Samudra%20Logistics!5e0!3m2!1sen!2sid!4v1719754726972!5m2!1sen!2sid"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
