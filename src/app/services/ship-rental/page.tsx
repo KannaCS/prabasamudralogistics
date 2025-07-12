@@ -13,28 +13,28 @@ export default function ShipRentalPage() {
       capacity: "500-1000 ton",
       dimensions: "45 x 12 x 3.5 m",
       description: t("servicesPage.services.shipRental.shipTypes.small"),
-      image: "/Kapal lct.png"
+      image: "/Kapal lct.webp"
     },
     {
       name: "LCT Medium",
       capacity: "1000-2000 ton",
       dimensions: "60 x 15 x 4 m",
       description: t("servicesPage.services.shipRental.shipTypes.medium"),
-      image: "/Kapal lct.png"
+      image: "/Kapal lct.webp"
     },
     {
       name: "LCT Large",
       capacity: "2000-3000 ton",
       dimensions: "75 x 18 x 4.5 m",
       description: t("servicesPage.services.shipRental.shipTypes.large"),
-      image: "/gambarkapalpraba.png"
+      image: "/gambarkapalpraba.webp"
     },
     {
       name: "LCT Extra Large",
       capacity: "3000+ ton",
       dimensions: "90 x 20 x 5 m",
       description: t("servicesPage.services.shipRental.shipTypes.extraLarge"),
-      image: "/gambarkapalpraba.png"
+      image: "/gambarkapalpraba.webp"
     }
   ];
 
@@ -108,7 +108,7 @@ export default function ShipRentalPage() {
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full">
             <Image 
-              src="/Kapal Cargo Stock Photo.jpg" 
+              src="/Kapal Cargo Stock Photo.webp" 
               alt={t("servicesPage.services.shipRental.title")}
               fill
               className="object-cover"

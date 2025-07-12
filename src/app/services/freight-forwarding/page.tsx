@@ -11,32 +11,32 @@ export default function FreightForwardingPage() {
     {
       title: t("servicesPage.services.freightForwarding.servicesList.seaFreight.title"),
       description: t("servicesPage.services.freightForwarding.servicesList.seaFreight.description"),
-      image: "/Kapal Cargo Container HD.jpg"
+      image: "/Kapal Cargo Container HD.webp"
     },
     {
       title: t("servicesPage.services.freightForwarding.servicesList.landTransport.title"),
       description: t("servicesPage.services.freightForwarding.servicesList.landTransport.description"),
-      image: "/Tronton _ Trailer With Load HD .jpg"
+      image: "/Tronton _ Trailer With Load HD .webp"
     },
     {
       title: t("servicesPage.services.freightForwarding.servicesList.airFreight.title"),
       description: t("servicesPage.services.freightForwarding.servicesList.airFreight.description"),
-      image: "/Hino Truck Long.jpg"
+      image: "/Hino Truck Long.webp"
     },
     {
       title: t("servicesPage.services.freightForwarding.servicesList.cargoConsolidation.title"),
       description: t("servicesPage.services.freightForwarding.servicesList.cargoConsolidation.description"),
-      image: "/Forktift Loading Into Truck ,.jpg"
+      image: "/Forktift Loading Into Truck ,.webp"
     },
     {
       title: t("servicesPage.services.freightForwarding.servicesList.customs.title"),
       description: t("servicesPage.services.freightForwarding.servicesList.customs.description"),
-      image: "/Hino Trailer with loading on.jpg"
+      image: "/Hino Trailer with loading on.webp"
     },
     {
       title: t("servicesPage.services.freightForwarding.servicesList.insurance.title"),
       description: t("servicesPage.services.freightForwarding.servicesList.insurance.description"),
-      image: "/Trailer , With Load Fuso.jpg"
+      image: "/Trailer , With Load Fuso.webp"
     }
   ];
 
@@ -111,7 +111,7 @@ export default function FreightForwardingPage() {
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full">
             <Image 
-              src="/Tronton With Load Hd_.jpg" 
+              src="/Tronton With Load Hd_.webp" 
               alt={t("servicesPage.services.freightForwarding.title")}
               fill
               className="object-cover"

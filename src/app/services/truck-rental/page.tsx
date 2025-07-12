@@ -13,28 +13,28 @@ export default function TruckRentalPage() {
       capacity: "4-8 ton",
       dimensions: "4.2 x 1.8 x 1.8 m",
       description: t("servicesPage.services.truckRental.truckTypes.cdd.description"),
-      image: "/CDD AND Fuso truck openat 00.21.04_1bc5335f.jpg"
+      image: "/CDD AND Fuso truck openat 00.21.04_1bc5335f.webp"
     },
     {
       name: t("servicesPage.services.truckRental.truckTypes.fuso.name"),
       capacity: "8-16 ton",
       dimensions: "6.0 x 2.4 x 2.2 m",
       description: t("servicesPage.services.truckRental.truckTypes.fuso.description"),
-      image: "/Tronton Fuso.jpg"
+      image: "/Tronton Fuso.webp"
     },
     {
       name: t("servicesPage.services.truckRental.truckTypes.tronton.name"),
       capacity: "20-30 ton",
       dimensions: "9.5 x 2.5 x 2.5 m",
       description: t("servicesPage.services.truckRental.truckTypes.tronton.description"),
-      image: "/Tronton With Load , HD.jpg"
+      image: "/Tronton With Load , HD.webp"
     },
     {
       name: t("servicesPage.services.truckRental.truckTypes.wingbox.name"),
       capacity: "5-15 ton",
       dimensions: "6.0 x 2.4 x 2.3 m",
       description: t("servicesPage.services.truckRental.truckTypes.wingbox.description"),
-      image: "/Fuso Wingbox.jpg"
+      image: "/Fuso Wingbox.webp"
     }
   ];
 
@@ -108,7 +108,7 @@ export default function TruckRentalPage() {
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full">
             <Image 
-              src="/Truck Fuso .jpg" 
+              src="/Truck Fuso .webp" 
               alt={t("servicesPage.services.truckRental.title")}
               fill
               className="object-cover"

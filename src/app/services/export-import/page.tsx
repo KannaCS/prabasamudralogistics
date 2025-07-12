@@ -11,22 +11,22 @@ export default function ExportImportPage() {
     {
       title: t("servicesPage.services.exportImport.servicesList.exportDocs.title"),
       description: t("servicesPage.services.exportImport.servicesList.exportDocs.description"),
-      image: "/Kapal Cargo Container HD.jpg"
+      image: "/Kapal Cargo Container HD.webp"
     },
     {
       title: t("servicesPage.services.exportImport.servicesList.importDocs.title"),
       description: t("servicesPage.services.exportImport.servicesList.importDocs.description"),
-      image: "/Isuzu  Container Truck with Loading On .jpg"
+      image: "/Isuzu  Container Truck with Loading On .webp"
     },
     {
       title: t("servicesPage.services.exportImport.servicesList.customs.title"),
       description: t("servicesPage.services.exportImport.servicesList.customs.description"),
-      image: "/Forktift Loading Into Truck ,.jpg"
+      image: "/Forktift Loading Into Truck ,.webp"
     },
     {
       title: t("servicesPage.services.exportImport.servicesList.consultation.title"),
       description: t("servicesPage.services.exportImport.servicesList.consultation.description"),
-      image: "/john-simmons-N7_NUUtCkDU-unsplash.jpg"
+      image: "/john-simmons-N7_NUUtCkDU-unsplash.webp"
     }
   ];
 
@@ -100,7 +100,7 @@ export default function ExportImportPage() {
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full">
             <Image 
-              src="/Tronton 1 with Container on.jpg" 
+              src="/Tronton 1 with Container on.webp" 
               alt={t("servicesPage.services.exportImport.title")}
               fill
               className="object-cover"
