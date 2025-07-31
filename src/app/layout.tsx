@@ -10,6 +10,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "PRABA SAMUDRA LOGISTICS - Solusi Logistik Terpercaya",
   description: "Layanan logistik dan freight forwarder terpercaya untuk kebutuhan pengiriman domestik dan internasional Anda",
+  icons: {
+    icon: '/logo.webp',
+    shortcut: '/logo.webp',
+    apple: '/logo.webp',
+  },
 };
 
 export default function RootLayout({
