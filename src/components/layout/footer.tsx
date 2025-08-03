@@ -127,13 +127,18 @@ export default function Footer() {
               </p>
               <p className="mb-2">
                 <span className="font-semibold">{t("footer.phone")}:</span>{" "}
-                <a href="tel:+6287781209022" className="hover:text-secondary block">
-                  +62 877-8120-9022
+                <a href="tel:+62817726068" className="hover:text-secondary block">
+                  +62 817-726068
                 </a>
                 <a href="tel:+6281806000469" className="hover:text-secondary block">
                   +62 818-06000-469
                 </a>
               </p>
+              <div className="mt-3 p-3 bg-yellow-50 border border-yellow-200 rounded-md">
+                <p className="text-sm text-yellow-800 font-medium">
+                  ⚠️ Hati-hati penipuan! Pastikan Anda menghubungi nomor telepon resmi yang tercantum di atas.
+                </p>
+              </div>
             </address>
           </div>
         </div>
