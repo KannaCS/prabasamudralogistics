@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { LanguageProvider } from "@/i18n/LanguageContext";
+import PageTransition from "@/components/ui/page-transition";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <LanguageProvider>
           <Header />
-          {children}
+          <PageTransition>
+            {children}
+          </PageTransition>
           <Footer />
         </LanguageProvider>
       </body>

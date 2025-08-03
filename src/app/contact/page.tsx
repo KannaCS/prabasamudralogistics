@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { initAnimations } from "@/lib/animations";
 
 export default function ContactPage() {
   const { t } = useLanguage();
@@ -18,6 +19,10 @@ export default function ContactPage() {
   });
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+    initAnimations('contact');
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -78,7 +83,7 @@ export default function ContactPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {/* Contact Information */}
-            <div className="bg-white rounded-lg shadow-md p-8">
+            <div className="contact-info bg-white rounded-lg shadow-md p-8">
               <h2 className="text-2xl font-semibold mb-6">{t("contactPage.office")}</h2>
               
               <div className="space-y-4">
@@ -163,7 +168,7 @@ export default function ContactPage() {
             </div>
             
             {/* Contact Form */}
-            <div className="bg-white rounded-lg shadow-md p-8">
+            <div className="contact-form bg-white rounded-lg shadow-md p-8">
               <h2 className="text-2xl font-semibold mb-6">{t("contactPage.formTitle")}</h2>
               
               {success ? (
@@ -273,7 +278,7 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className={`w-full px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-600 transition-colors ${
+                      className={`btn w-full px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-600 transition-colors ${
                         isSubmitting ? "opacity-70 cursor-not-allowed" : ""
                       }`}
                     >

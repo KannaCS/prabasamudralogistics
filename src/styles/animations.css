@@ -1,0 +1,139 @@
+/* GSAP Animation Enhancement Styles */
+
+/* Ensure smooth transitions for all animated elements */
+.hero-title,
+.hero-subtitle,
+.hero-buttons,
+.hero-image,
+.service-card,
+.client-card,
+.about-section,
+.cta-section,
+.services-hero,
+.service-detail-card,
+.contact-info,
+.contact-form,
+.booking-form,
+.booking-step,
+.tracking-form,
+.tracking-result,
+.footer-column {
+  will-change: transform, opacity;
+}
+
+/* Service card hover states */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover enhancements */
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo animation enhancement */
+.logo {
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile navigation smooth transitions */
+.mobile-nav {
+  overflow: hidden;
+}
+
+/* Page transition container */
+.page-transition-container {
+  min-height: 100vh;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading states */
+.loading-overlay {
+  backdrop-filter: blur(4px);
+}
+
+/* Animation performance optimizations */
+.hero-image img,
+.service-card img {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Stagger animation delays for better visual flow */
+.service-card:nth-child(1) { animation-delay: 0s; }
+.service-card:nth-child(2) { animation-delay: 0.1s; }
+.service-card:nth-child(3) { animation-delay: 0.2s; }
+.service-card:nth-child(4) { animation-delay: 0.3s; }
+
+.client-card:nth-child(1) { animation-delay: 0s; }
+.client-card:nth-child(2) { animation-delay: 0.05s; }
+.client-card:nth-child(3) { animation-delay: 0.1s; }
+.client-card:nth-child(4) { animation-delay: 0.15s; }
+.client-card:nth-child(5) { animation-delay: 0.2s; }
+
+.footer-column:nth-child(1) { animation-delay: 0s; }
+.footer-column:nth-child(2) { animation-delay: 0.1s; }
+.footer-column:nth-child(3) { animation-delay: 0.2s; }
+.footer-column:nth-child(4) { animation-delay: 0.3s; }
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .hero-title,
+  .hero-subtitle,
+  .hero-buttons,
+  .hero-image,
+  .service-card,
+  .client-card,
+  .about-section,
+  .cta-section,
+  .services-hero,
+  .service-detail-card,
+  .contact-info,
+  .contact-form,
+  .booking-form,
+  .booking-step,
+  .tracking-form,
+  .tracking-result,
+  .footer-column {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Focus states for accessibility */
+.btn:focus,
+.service-card:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .service-card {
+    border: 2px solid currentColor;
+  }
+}

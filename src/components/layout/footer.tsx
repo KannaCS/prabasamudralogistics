@@ -1,17 +1,25 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { footerAnimations } from "@/lib/animations";
 
 export default function Footer() {
   const { t } = useLanguage();
+
+  useEffect(() => {
+    // Initialize footer animations
+    footerAnimations.slideUpOnScroll('footer');
+    footerAnimations.staggerColumns('.footer-column');
+  }, []);
   
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div>
+          <div className="footer-column">
             <h3 className="text-xl font-bold mb-4">PRABA SAMUDRA LOGISTICS</h3>
             <p className="mb-4">
               {t("footer.aboutText")}
@@ -36,7 +44,7 @@ export default function Footer() {
           </div>
           
           {/* Quick Links */}
-          <div>
+          <div className="footer-column">
             <h3 className="text-xl font-bold mb-4">{t("footer.quickLinks")}</h3>
             <ul className="space-y-2">
               <li>
@@ -68,7 +76,7 @@ export default function Footer() {
           </div>
           
           {/* Services */}
-          <div>
+          <div className="footer-column">
             <h3 className="text-xl font-bold mb-4">{t("footer.services")}</h3>
             <ul className="space-y-2">
               <li>
@@ -100,7 +108,7 @@ export default function Footer() {
           </div>
           
           {/* Contact */}
-          <div>
+          <div className="footer-column">
             <h3 className="text-xl font-bold mb-4">{t("footer.contact")}</h3>
             <address className="not-italic">
               <p className="mb-2">PT. Praba Samudra Logistics</p>

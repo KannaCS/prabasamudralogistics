@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { headerAnimations } from "@/lib/animations";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,17 +15,30 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    // Initialize header animations
+    headerAnimations.logoEntrance('.logo');
+    headerAnimations.navigationSlideIn('nav a');
+  }, []);
+
+  useEffect(() => {
+    // Animate mobile menu
+    if (isMenuOpen) {
+      headerAnimations.mobileMenuSlide('.mobile-nav');
+    }
+  }, [isMenuOpen]);
+
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="logo flex items-center">
             <div className="relative w-10 h-10 mr-2">
-              <Image 
-                src="/logo.webp" 
-                alt="PRABA SAMUDRA LOGISTICS" 
-                fill 
+              <Image
+                src="/logo.webp"
+                alt="PRABA SAMUDRA LOGISTICS"
+                fill
                 className="object-contain"
               />
             </div>
@@ -95,7 +109,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden py-4 border-t">
+          <nav className="mobile-nav md:hidden py-4 border-t">
             <div className="flex flex-col space-y-4">
               <Link 
                 href="/" 

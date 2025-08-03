@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { initAnimations } from "@/lib/animations";
 
 interface TrackingTimeline {
   status: string;
@@ -25,6 +26,10 @@ export default function TrackingPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [trackingResult, setTrackingResult] = useState<TrackingResult | null>(null);
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    initAnimations('tracking');
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -87,7 +92,7 @@ export default function TrackingPage() {
     <div className="bg-gray-50 py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-lg shadow-md p-8 mb-8">
+          <div className="tracking-form bg-white rounded-lg shadow-md p-8 mb-8">
             <h1 className="text-3xl font-bold text-center mb-8">{t("tracking.title")}</h1>
             
             <div className="mb-8">
@@ -108,7 +113,7 @@ export default function TrackingPage() {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className={`px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-600 transition-colors ${
+                  className={`btn px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-600 transition-colors ${
                     isLoading ? "opacity-70 cursor-not-allowed" : ""
                   }`}
                 >
@@ -126,7 +131,7 @@ export default function TrackingPage() {
           </div>
           
           {trackingResult && (
-            <div className="bg-white rounded-lg shadow-md p-8">
+            <div className="tracking-result bg-white rounded-lg shadow-md p-8">
               <h2 className="text-2xl font-semibold mb-6">{t("tracking.result.title")}</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">

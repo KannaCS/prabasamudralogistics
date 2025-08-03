@@ -1,11 +1,17 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { initAnimations } from "@/lib/animations";
 
 export default function ServicesPage() {
   const { t } = useLanguage();
+
+  useEffect(() => {
+    initAnimations('services');
+  }, []);
 
   const services = [
     {
@@ -63,7 +69,7 @@ export default function ServicesPage() {
     <div className="bg-gray-50 py-12">
       <div className="container mx-auto px-4">
         {/* Hero Section */}
-        <div className="text-center mb-16">
+        <div className="services-hero text-center mb-16">
           <h1 className="text-4xl font-bold mb-4">{t("servicesPage.hero.title")}</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             {t("servicesPage.hero.subtitle")}
@@ -73,9 +79,9 @@ export default function ServicesPage() {
         {/* Services List */}
         <div className="space-y-24">
           {services.map((service, index) => (
-            <div 
-              key={service.id} 
-              className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 items-center`}
+            <div
+              key={service.id}
+              className={`service-detail-card flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 items-center`}
             >
               {/* Image */}
               <div className="w-full md:w-1/2 relative">
@@ -109,9 +115,9 @@ export default function ServicesPage() {
                   ))}
                 </ul>
                 
-                <Link 
+                <Link
                   href={`/services/${service.id}`}
-                  className="inline-block px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-600 transition-colors"
+                  className="btn inline-block px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-600 transition-colors"
                 >
                   {t("servicesPage.learnMore")}
                 </Link>
@@ -127,15 +133,15 @@ export default function ServicesPage() {
             {t("servicesPage.cta.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
+            <Link
               href="/contact"
-              className="px-8 py-3 bg-white text-primary font-semibold rounded-md hover:bg-gray-100 transition-colors"
+              className="btn px-8 py-3 bg-white text-primary font-semibold rounded-md hover:bg-gray-100 transition-colors"
             >
               {t("servicesPage.cta.contactButton")}
             </Link>
-            <Link 
+            <Link
               href="/booking"
-              className="px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-md hover:bg-white hover:text-primary transition-colors"
+              className="btn px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-md hover:bg-white hover:text-primary transition-colors"
             >
               {t("servicesPage.cta.bookingButton")}
             </Link>

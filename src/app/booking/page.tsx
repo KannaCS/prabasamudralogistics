@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { initAnimations } from "@/lib/animations";
 
 export default function BookingPage() {
   const { t } = useLanguage();
@@ -39,6 +40,10 @@ export default function BookingPage() {
     distance: "",
     pic: "",
   });
+
+  useEffect(() => {
+    initAnimations('booking');
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -82,7 +87,7 @@ export default function BookingPage() {
   return (
     <div className="bg-gray-50 py-12">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">
+        <div className="booking-form max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">
           <h1 className="text-3xl font-bold text-center mb-8">{t("booking.title")}</h1>
           
           <div className="mb-8">
@@ -100,7 +105,7 @@ export default function BookingPage() {
           <form onSubmit={handleSubmit}>
             <div className="space-y-6">
               {/* Personal Information */}
-              <div>
+              <div className="booking-step">
                 <h2 className="text-xl font-semibold border-b pb-2 mb-4">{t("booking.contactInfo.title")}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -162,7 +167,7 @@ export default function BookingPage() {
               </div>
               
               {/* Shipment Details */}
-              <div>
+              <div className="booking-step">
                 <h2 className="text-xl font-semibold border-b pb-2 mb-4">{t("booking.shipmentDetails.title")}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -518,7 +523,7 @@ export default function BookingPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`px-6 py-2 bg-primary text-white rounded-md hover:bg-primary-600 transition-colors ${
+                    className={`btn px-6 py-2 bg-primary text-white rounded-md hover:bg-primary-600 transition-colors ${
                       isSubmitting ? "opacity-70 cursor-not-allowed" : ""
                     }`}
                   >
