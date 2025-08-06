@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // Removed output: 'export' to enable full backend functionality
   images: {
-    unoptimized: true, // Required for static export
     formats: ['image/webp'],
     minimumCacheTTL: 60,
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
@@ -16,10 +15,10 @@ const nextConfig = {
     // Ignores any ESLint errors during the build
     ignoreDuringBuilds: true
   },
-  // Ensure proper directory structure for static export
-  trailingSlash: true,
-  // Ensure proper handling of nested routes
-  basePath: '',
+  // Enable API routes and server-side functionality
+  experimental: {
+    serverComponentsExternalPackages: ['@prisma/client']
+  }
 };
 
 module.exports = nextConfig;

@@ -1,25 +1,13 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
-
-// Fungsi untuk menghasilkan nomor booking unik
-function generateBookingNumber() {
-  const prefix = 'PSL';
-  const timestamp = new Date().getTime().toString().slice(-6);
-  const random = Math.floor(Math.random() * 1000).toString().padStart(3, '0');
-  return `${prefix}${timestamp}${random}`;
-}
-
-// Fungsi validasi email
-function isValidEmail(email: string): boolean {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailRegex.test(email);
-}
-
-// Fungsi validasi nomor telepon
-function isValidPhone(phone: string): boolean {
-  const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
-  return phoneRegex.test(phone.replace(/[\s\-\(\)]/g, ''));
-}
+import { 
+  generateBookingNumber, 
+  isValidEmail, 
+  isValidPhone, 
+  sanitizeInput,
+  createErrorResponse,
+  createSuccessResponse
+} from '@/lib/utils';
 
 export async function POST(request: Request) {
   try {
@@ -57,10 +45,11 @@ export async function POST(request: Request) {
     // Validasi data wajib
     if (!fullName || !email || !phone || !serviceType || !origin || !destination || !shipmentDate) {
       return NextResponse.json(
-        {
-          error: 'Beberapa field wajib tidak diisi',
-          details: 'fullName, email, phone, serviceType, origin, destination, dan shipmentDate harus diisi'
-        },
+        createErrorResponse(
+          'Beberapa field wajib tidak diisi',
+          400,
+          'fullName, email, phone, serviceType, origin, destination, dan shipmentDate harus diisi'
+        ),
         { status: 400 }
       );
     }
@@ -68,7 +57,7 @@ export async function POST(request: Request) {
     // Validasi format email
     if (!isValidEmail(email)) {
       return NextResponse.json(
-        { error: 'Format email tidak valid' },
+        createErrorResponse('Format email tidak valid', 400),
         { status: 400 }
       );
     }
@@ -76,7 +65,7 @@ export async function POST(request: Request) {
     // Validasi format nomor telepon
     if (!isValidPhone(phone)) {
       return NextResponse.json(
-        { error: 'Format nomor telepon tidak valid' },
+        createErrorResponse('Format nomor telepon tidak valid', 400),
         { status: 400 }
       );
     }
@@ -85,7 +74,7 @@ export async function POST(request: Request) {
     const shipmentDateObj = new Date(shipmentDate);
     if (isNaN(shipmentDateObj.getTime())) {
       return NextResponse.json(
-        { error: 'Format tanggal pengiriman tidak valid' },
+        createErrorResponse('Format tanggal pengiriman tidak valid', 400),
         { status: 400 }
       );
     }
@@ -95,7 +84,7 @@ export async function POST(request: Request) {
     today.setHours(0, 0, 0, 0);
     if (shipmentDateObj < today) {
       return NextResponse.json(
-        { error: 'Tanggal pengiriman tidak boleh di masa lalu' },
+        createErrorResponse('Tanggal pengiriman tidak boleh di masa lalu', 400),
         { status: 400 }
       );
     }
@@ -117,7 +106,7 @@ export async function POST(request: Request) {
 
     if (attempts >= maxAttempts) {
       return NextResponse.json(
-        { error: 'Gagal menghasilkan nomor booking unik' },
+        createErrorResponse('Gagal menghasilkan nomor booking unik', 500),
         { status: 500 }
       );
     }
@@ -125,40 +114,39 @@ export async function POST(request: Request) {
     // Simpan data booking ke database
     const booking = await prisma.booking.create({
       data: {
-        fullName: fullName.trim(),
+        fullName: sanitizeInput(fullName, 100),
         email: email.toLowerCase().trim(),
         phone: phone.trim(),
-        company: company?.trim() || null,
+        company: company ? sanitizeInput(company, 100) : null,
         serviceType,
-        cargoType: cargoType?.trim() || null,
-        origin: origin.trim(),
-        destination: destination.trim(),
+        cargoType: cargoType ? sanitizeInput(cargoType, 100) : null,
+        origin: sanitizeInput(origin, 200),
+        destination: sanitizeInput(destination, 200),
         shipmentDate: shipmentDateObj,
         weight: weight ? parseFloat(weight) : null,
-        dimensions: dimensions?.trim() || null,
-        specialInstructions: specialInstructions?.trim() || null,
+        dimensions: dimensions ? sanitizeInput(dimensions, 200) : null,
+        specialInstructions: specialInstructions ? sanitizeInput(specialInstructions, 1000) : null,
         bookingNumber,
-        goodsType: goodsType?.trim() || null,
-        hsCode: hsCode?.trim() || null,
-        countryOrigin: countryOrigin?.trim() || null,
-        countryDestination: countryDestination?.trim() || null,
-        lartas: lartas?.trim() || null,
-        proforma: proforma?.trim() || null,
-        exportImportType: exportImportType?.trim() || null,
-        portOfLoading: portOfLoading?.trim() || null,
-        portOfDelivery: portOfDelivery?.trim() || null,
-        laycan: laycan?.trim() || null,
-        packingList: packingList?.trim() || null,
-        cargoPlan: cargoPlan?.trim() || null,
-        cargo: cargo?.trim() || null,
-        distance: distance?.trim() || null,
-        pic: pic?.trim() || null
+        goodsType: goodsType ? sanitizeInput(goodsType, 100) : null,
+        hsCode: hsCode ? sanitizeInput(hsCode, 50) : null,
+        countryOrigin: countryOrigin ? sanitizeInput(countryOrigin, 100) : null,
+        countryDestination: countryDestination ? sanitizeInput(countryDestination, 100) : null,
+        lartas: lartas ? sanitizeInput(lartas, 100) : null,
+        proforma: proforma ? sanitizeInput(proforma, 100) : null,
+        exportImportType: exportImportType ? sanitizeInput(exportImportType, 50) : null,
+        portOfLoading: portOfLoading ? sanitizeInput(portOfLoading, 100) : null,
+        portOfDelivery: portOfDelivery ? sanitizeInput(portOfDelivery, 100) : null,
+        laycan: laycan ? sanitizeInput(laycan, 100) : null,
+        packingList: packingList ? sanitizeInput(packingList, 200) : null,
+        cargoPlan: cargoPlan ? sanitizeInput(cargoPlan, 200) : null,
+        cargo: cargo ? sanitizeInput(cargo, 200) : null,
+        distance: distance ? sanitizeInput(distance, 100) : null,
+        pic: pic ? sanitizeInput(pic, 100) : null
       },
     });
 
-    return NextResponse.json({
-      success: true,
-      data: {
+    return NextResponse.json(
+      createSuccessResponse({
         id: booking.id,
         bookingNumber: booking.bookingNumber,
         fullName: booking.fullName,
@@ -169,9 +157,9 @@ export async function POST(request: Request) {
         shipmentDate: booking.shipmentDate,
         status: booking.status,
         createdAt: booking.createdAt
-      },
-      message: 'Booking berhasil dibuat'
-    }, { status: 201 });
+      }, 'Booking berhasil dibuat'),
+      { status: 201 }
+    );
 
   } catch (error) {
     console.error('Error submitting booking form:', error);
@@ -180,24 +168,21 @@ export async function POST(request: Request) {
     if (error instanceof Error) {
       if (error.message.includes('Unique constraint')) {
         return NextResponse.json(
-          { error: 'Nomor booking sudah ada, silakan coba lagi' },
+          createErrorResponse('Nomor booking sudah ada, silakan coba lagi', 409),
           { status: 409 }
         );
       }
       
       if (error.message.includes('Foreign key constraint')) {
         return NextResponse.json(
-          { error: 'Data referensi tidak valid' },
+          createErrorResponse('Data referensi tidak valid', 400),
           { status: 400 }
         );
       }
     }
 
     return NextResponse.json(
-      {
-        error: 'Terjadi kesalahan saat memproses booking',
-        details: process.env.NODE_ENV === 'development' ? error : undefined
-      },
+      createErrorResponse('Terjadi kesalahan saat memproses booking', 500, error),
       { status: 500 }
     );
   }

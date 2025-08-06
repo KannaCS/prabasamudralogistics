@@ -15,7 +15,12 @@
     "start": "next start",
     "export": "next export",
     "lint": "next lint",
-    "optimize-images": "node src/scripts/optimize-images.js"
+    "optimize-images": "node src/scripts/optimize-images.js",
+    "db:migrate": "npx prisma migrate dev",
+    "db:generate": "npx prisma generate",
+    "db:seed": "npx ts-node src/scripts/seed.ts",
+    "db:reset": "npx prisma migrate reset --force",
+    "db:studio": "npx prisma studio"
   },
   "dependencies": {
     "@prisma/client": "^6.10.1",
