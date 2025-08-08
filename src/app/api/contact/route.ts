@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
+import { emailService } from '@/lib/email';
 
 // Fungsi validasi email
 function isValidEmail(email: string): boolean {
@@ -86,6 +87,14 @@ export async function POST(request: Request) {
         message: sanitizeInput(message, 2000),
       },
     });
+
+    // Send email notification to admin
+    try {
+      await emailService.sendNewContactNotification(contact);
+    } catch (emailError) {
+      console.error('Failed to send email notification:', emailError);
+      // Don't fail the contact creation if email fails
+    }
 
     return NextResponse.json({
       success: true,

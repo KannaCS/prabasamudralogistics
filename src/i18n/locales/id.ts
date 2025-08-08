@@ -45,6 +45,10 @@ export const id = {
     clients: {
       title: "Pelanggan Kami"
     },
+    partners: {
+      title: "Mitra Kami",
+      subtitle: "Didukung oleh kemitraan strategis dengan organisasi dan asosiasi terpercaya"
+    },
     cta: {
       title: "Siap Untuk Memulai?",
       subtitle: "Hubungi kami sekarang untuk konsultasi gratis atau gunakan sistem booking online kami.",

@@ -45,6 +45,10 @@ export const en = {
     clients: {
       title: "Our Clients"
     },
+    partners: {
+      title: "Our Partners",
+      subtitle: "Backed by strategic partnerships with trusted organizations and associations"
+    },
     cta: {
       title: "Ready to Get Started?",
       subtitle: "Contact us now for a free consultation or use our online booking system.",

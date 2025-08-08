@@ -169,6 +169,67 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Partners Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t("homePage.partners.title")}</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              {t("homePage.partners.subtitle")}
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+            {/* Partner 1 - Association of Indonesian Logistics */}
+            <div className="partner-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+              <div className="w-full h-20 relative">
+                <Image
+                  src="/mitra/Asosition logistics indonesia.jpg"
+                  alt="Asosiasi Logistik Indonesia"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+            
+            {/* Partner 2 - Bandar Golf Kemayoran */}
+            <div className="partner-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+              <div className="w-full h-20 relative">
+                <Image
+                  src="/mitra/Bandar golf Kemayoran.jpg"
+                  alt="Bandar Golf Kemayoran"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+            
+            {/* Partner 3 - National Logistics Collaboration */}
+            <div className="partner-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+              <div className="w-full h-20 relative">
+                <Image
+                  src="/mitra/Collaboration logistics nasional.jpg"
+                  alt="Kolaborasi Logistik Nasional"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+            
+            {/* Partner 4 - Indonesian Chamber of Commerce */}
+            <div className="partner-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+              <div className="w-full h-20 relative">
+                <Image
+                  src="/mitra/Kadin.jpg"
+                  alt="Kamar Dagang dan Industri Indonesia"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="cta-section bg-secondary py-16">
         <div className="container mx-auto px-4 text-center">

@@ -45,6 +45,10 @@ export const jp = {
     clients: {
       title: "クライアント"
     },
+    partners: {
+      title: "パートナー",
+      subtitle: "信頼できる組織・協会との戦略的パートナーシップでサポート"
+    },
     cta: {
       title: "始める準備はできましたか？",
       subtitle: "無料相談のためにお問い合わせいただくか、オンライン予約システムをご利用ください。",

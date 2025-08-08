@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { verifyAdminToken } from "@/lib/auth";
+import { emailService } from "@/lib/email";
 
 // GET individual booking by ID
 export async function GET(
@@ -91,6 +92,11 @@ export async function PUT(
       }
     }
 
+    // Get current booking to check status change
+    const currentBooking = await prisma.booking.findUnique({
+      where: { id }
+    });
+
     // Update booking
     const updatedBooking = await prisma.booking.update({
       where: { id },
@@ -100,6 +106,20 @@ export async function PUT(
         updatedAt: new Date()
       }
     });
+
+    // Send email notification if status changed
+    if (status && currentBooking && currentBooking.status !== status) {
+      try {
+        await emailService.sendBookingStatusUpdateNotification(
+          updatedBooking,
+          currentBooking.status,
+          status
+        );
+      } catch (emailError) {
+        console.error('Failed to send status update email:', emailError);
+        // Don't fail the update if email fails
+      }
+    }
 
     return NextResponse.json({
       success: true,

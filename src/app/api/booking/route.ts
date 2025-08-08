@@ -8,6 +8,7 @@ import {
   createErrorResponse,
   createSuccessResponse
 } from '@/lib/utils';
+import { emailService } from '@/lib/email';
 
 export async function POST(request: Request) {
   try {
@@ -144,6 +145,14 @@ export async function POST(request: Request) {
         pic: pic ? sanitizeInput(pic, 100) : null
       },
     });
+
+    // Send email notification to admin
+    try {
+      await emailService.sendNewBookingNotification(booking);
+    } catch (emailError) {
+      console.error('Failed to send email notification:', emailError);
+      // Don't fail the booking creation if email fails
+    }
 
     return NextResponse.json(
       createSuccessResponse({
