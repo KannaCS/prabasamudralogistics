@@ -3,6 +3,9 @@ import { cookies } from 'next/headers';
 import jwt from 'jsonwebtoken';
 import { config } from '@/lib/config';
 
+// Force this route to be dynamic (not statically generated)
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   try {
     // Dapatkan token dari cookie
