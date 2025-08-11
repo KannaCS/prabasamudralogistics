@@ -1,6 +1,6 @@
 -- CreateTable
 CREATE TABLE "Booking" (
-    "id" TEXT NOT NULL,
+    "id" TEXT NOT NULL PRIMARY KEY,
     "fullName" TEXT NOT NULL,
     "email" TEXT NOT NULL,
     "phone" TEXT NOT NULL,
@@ -9,8 +9,8 @@ CREATE TABLE "Booking" (
     "cargoType" TEXT,
     "origin" TEXT NOT NULL,
     "destination" TEXT NOT NULL,
-    "shipmentDate" TIMESTAMP(3) NOT NULL,
-    "weight" DOUBLE PRECISION,
+    "shipmentDate" DATETIME NOT NULL,
+    "weight" REAL,
     "dimensions" TEXT,
     "specialInstructions" TEXT,
     "status" TEXT NOT NULL DEFAULT 'pending',
@@ -30,24 +30,20 @@ CREATE TABLE "Booking" (
     "cargo" TEXT,
     "distance" TEXT,
     "pic" TEXT,
-    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    "updatedAt" TIMESTAMP(3) NOT NULL,
-
-    CONSTRAINT "Booking_pkey" PRIMARY KEY ("id")
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL
 );
 
 -- CreateTable
 CREATE TABLE "Contact" (
-    "id" TEXT NOT NULL,
+    "id" TEXT NOT NULL PRIMARY KEY,
     "fullName" TEXT NOT NULL,
     "email" TEXT NOT NULL,
     "subject" TEXT NOT NULL,
     "message" TEXT NOT NULL,
     "status" TEXT NOT NULL DEFAULT 'unread',
-    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    "updatedAt" TIMESTAMP(3) NOT NULL,
-
-    CONSTRAINT "Contact_pkey" PRIMARY KEY ("id")
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL
 );
 
 -- CreateIndex
