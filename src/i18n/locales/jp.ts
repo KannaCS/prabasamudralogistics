@@ -46,8 +46,8 @@ export const jp = {
       title: "クライアント"
     },
     partners: {
-      title: "パートナー",
-      subtitle: "信頼できる組織・協会との戦略的パートナーシップでサポート"
+      title: "Official Member Of",
+      subtitle: "Registered as an official member of reputable industry organizations"
     },
     cta: {
       title: "始める準備はできましたか？",
