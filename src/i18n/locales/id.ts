@@ -46,8 +46,8 @@ export const id = {
       title: "Pelanggan Kami"
     },
     partners: {
-      title: "Mitra Kami",
-      subtitle: "Didukung oleh kemitraan strategis dengan organisasi dan asosiasi terpercaya"
+      title: "Official Member Of",
+      subtitle: "Registered as an official member of reputable industry organizations"
     },
     cta: {
       title: "Siap Untuk Memulai?",

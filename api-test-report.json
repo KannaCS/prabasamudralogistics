@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "total": 4,
+    "passed": 1,
+    "failed": 3,
+    "success_rate": "25.00%"
+  },
+  "timestamp": "2025-08-09T10:51:50.204Z",
+  "tests": [
+    {
+      "test": "Application Health Check",
+      "status": "PASS",
+      "details": "Server responding with status 200",
+      "timestamp": "2025-08-09T10:51:49.470Z",
+      "response": {
+        "status": 200,
+        "data": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=5\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/%5Br"
+      }
+    },
+    {
+      "test": "Create Booking",
+      "status": "FAIL",
+      "details": "Unexpected response",
+      "timestamp": "2025-08-09T10:51:49.902Z",
+      "response": {
+        "status": 404,
+        "data": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=5\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/%5Br"
+      }
+    },
+    {
+      "test": "Create Contact",
+      "status": "FAIL",
+      "details": "Unexpected response",
+      "timestamp": "2025-08-09T10:51:50.064Z",
+      "response": {
+        "status": 404,
+        "data": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=5\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/%5Br"
+      }
+    },
+    {
+      "test": "Admin Login",
+      "status": "FAIL",
+      "details": "Authentication failed",
+      "timestamp": "2025-08-09T10:51:50.203Z",
+      "response": {
+        "status": 404,
+        "data": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=5\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/%5Br"
+      }
+    }
+  ]
+}

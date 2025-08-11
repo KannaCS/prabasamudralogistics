@@ -1,0 +1,24 @@
+{
+  "passed": 2,
+  "failed": 1,
+  "tests": [
+    {
+      "test": "Create Contact",
+      "status": "PASS",
+      "details": "Contact created with ID: 882b41e8-107f-4759-9201-a327c4374451",
+      "timestamp": "2025-08-09T10:54:43.639Z"
+    },
+    {
+      "test": "Read Contact",
+      "status": "PASS",
+      "details": "Contact retrieved: Test CRUD User",
+      "timestamp": "2025-08-09T10:54:43.701Z"
+    },
+    {
+      "test": "General CRUD Test",
+      "status": "FAIL",
+      "details": "Unexpected error: \nInvalid `prisma.contact.update()` invocation in\nC:\\Users\\penel\\Desktop\\prabasamudralogistics\\test-crud-operations.js:63:49\n\n  60 \n  61 // Test 3: Update Contact\n  62 console.log('\\n3️⃣ Testing Contact Update...');\n→ 63 const updatedContact = await prisma.contact.update(\nThe column `new` does not exist in the current database.",
+      "timestamp": "2025-08-09T10:54:43.770Z"
+    }
+  ]
+}
