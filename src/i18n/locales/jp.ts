@@ -827,6 +827,7 @@ export const jp = {
     saturday: "土曜：08:00 - 13:00",
     sunday: "日曜：休業",
     socialMedia: "フォローする",
+    whatsapp: "WhatsApp",
     location: "Google マップでの所在地"
   },
   footer: {

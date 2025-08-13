@@ -808,6 +808,7 @@ export const en = {
     saturday: "Saturday: 08:00 - 13:00",
     sunday: "Sunday: Closed",
     socialMedia: "Follow Us",
+    whatsapp: "WhatsApp",
     location: "Our Location on Google Maps"
   },
   footer: {

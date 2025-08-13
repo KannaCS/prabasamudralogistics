@@ -808,6 +808,7 @@ export const id = {
     saturday: "Sabtu: 08.00 - 13.00",
     sunday: "Minggu: Tutup",
     socialMedia: "Ikuti Kami",
+    whatsapp: "WhatsApp",
     location: "Lokasi Kami di Google Maps"
   },
   footer: {
