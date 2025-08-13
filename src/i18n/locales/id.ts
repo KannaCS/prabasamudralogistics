@@ -4,6 +4,9 @@ export const id = {
       id: "Bahasa Indonesia",
       en: "Bahasa Inggris",
       jp: "Bahasa Jepang"
+    },
+    notices: {
+      scamWarning: "Hati-hati penipuan! Pastikan Anda menghubungi nomor telepon resmi yang tercantum di atas."
     }
   },
   menu: {
@@ -46,8 +49,8 @@ export const id = {
       title: "Pelanggan Kami"
     },
     partners: {
-      title: "Official Member Of",
-      subtitle: "Registered as an official member of reputable industry organizations"
+      title: "Anggota Resmi",
+      subtitle: "Diakui dan tercatat sebagai anggota resmi pada organisasi industri bergengsi yang memiliki reputasi internasional."
     },
     cta: {
       title: "Siap Untuk Memulai?",

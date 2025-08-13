@@ -4,6 +4,9 @@ export const en = {
       id: "Indonesian",
       en: "English",
       jp: "Japanese"
+    },
+    notices: {
+      scamWarning: "Beware of scams! Make sure to contact the official phone number listed above."
     }
   },
   menu: {
@@ -46,8 +49,8 @@ export const en = {
       title: "Our Clients"
     },
     partners: {
-      title: "Official Member Of",
-      subtitle: "Registered as an official member of reputable industry organizations"
+      title: "Official Member",
+      subtitle: "Recognized and registered as an official member of prestigious industry organizations with an international reputation."
     },
     cta: {
       title: "Ready to Get Started?",

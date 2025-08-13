@@ -122,7 +122,14 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
       }
     }
   }, []);
-
+ 
+  // Keep document <html lang="..."> in sync with current language
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      document.documentElement.setAttribute("lang", language);
+    }
+  }, [language]);
+ 
   const value = {
     language,
     setLanguage,

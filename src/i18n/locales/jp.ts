@@ -4,6 +4,9 @@ export const jp = {
       id: "インドネシア語",
       en: "英語",
       jp: "日本語"
+    },
+    notices: {
+      scamWarning: "詐欺にご注意ください！必ず上記に記載された公式電話番号にご連絡ください。"
     }
   },
   menu: {
@@ -46,8 +49,8 @@ export const jp = {
       title: "クライアント"
     },
     partners: {
-      title: "Official Member Of",
-      subtitle: "Registered as an official member of reputable industry organizations"
+      title: "正式会員",
+      subtitle: "国際的に高い評価を受ける名門業界団体の正式会員として認定・登録されています。"
     },
     cta: {
       title: "始める準備はできましたか？",

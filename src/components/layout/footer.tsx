@@ -136,7 +136,7 @@ export default function Footer() {
               </p>
               <div className="mt-3 p-3 bg-yellow-50 border border-yellow-200 rounded-md">
                 <p className="text-sm text-yellow-800 font-medium">
-                  ⚠️ Hati-hati penipuan! Pastikan Anda menghubungi nomor telepon resmi yang tercantum di atas.
+                  ⚠️ {t("common.notices.scamWarning")}
                 </p>
               </div>
             </address>
