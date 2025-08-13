@@ -819,6 +819,17 @@ export const id = {
     address: "Alamat",
     phone: "Telepon",
     email: "Email",
-    copyright: "© 2023 PT. Praba Samudra Logistic. Hak Cipta Dilindungi."
+    copyright: "© 2025 PT. Praba Samudra Logistic. Hak Cipta Dilindungi."
+  },
+  paymentMethods: {
+    title: "Metode Pembayaran yang Didukung",
+    description: "Kami menerima berbagai metode pembayaran untuk kemudahan transaksi Anda",
+    methods: {
+      visa: "Visa",
+      mastercard: "Mastercard",
+      jcb: "JCB",
+      alipay: "Alipay",
+      gpn: "GPN (Gerbang Pembayaran Nasional)"
+    }
   }
-}; 
+};

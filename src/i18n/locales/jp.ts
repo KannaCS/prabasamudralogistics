@@ -838,6 +838,17 @@ export const jp = {
     address: "住所",
     phone: "電話",
     email: "メール",
-    copyright: "© 2023 PT. Praba Samudra Logistic. All Rights Reserved."
+    copyright: "© 2025 PT. Praba Samudra Logistic. All Rights Reserved."
+  },
+  paymentMethods: {
+    title: "対応しているお支払い方法",
+    description: "お客様の取引の便宜のため、さまざまなお支払い方法をご利用いただけます",
+    methods: {
+      visa: "Visa",
+      mastercard: "Mastercard",
+      jcb: "JCB",
+      alipay: "Alipay",
+      gpn: "GPN（国家決済ゲートウェイ）"
+    }
   }
-}; 
+};

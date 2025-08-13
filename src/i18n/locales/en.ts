@@ -819,6 +819,17 @@ export const en = {
     address: "Address",
     phone: "Phone",
     email: "Email",
-    copyright: "© 2023 PT. Praba Samudra Logistic. All Rights Reserved."
+    copyright: "© 2025 PT. Praba Samudra Logistic. All Rights Reserved."
+  },
+  paymentMethods: {
+    title: "Supported Payment Methods",
+    description: "We accept various payment methods for your transaction convenience",
+    methods: {
+      visa: "Visa",
+      mastercard: "Mastercard",
+      jcb: "JCB",
+      alipay: "Alipay",
+      gpn: "GPN (National Payment Gateway)"
+    }
   }
-}; 
+};
