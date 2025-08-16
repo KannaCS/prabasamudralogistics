@@ -87,13 +87,13 @@ export const headerAnimations = {
   logoEntrance: (element: HTMLElement | string) => {
     return gsap.fromTo(
       element,
-      { opacity: 0, scale: 0.5, rotation: -180 },
-      { 
-        opacity: 1, 
-        scale: 1, 
-        rotation: 0,
-        duration: animationConfig.duration.slow,
-        ease: animationConfig.ease.bounce,
+      { opacity: 0, y: -8, scale: 0.98 },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: animationConfig.duration.fast,
+        ease: animationConfig.ease.smooth,
       }
     );
   },
@@ -472,7 +472,100 @@ export const animationUtils = {
         sectionAnimations.fadeInOnScroll('.about-section');
         sectionAnimations.staggerCardsOnScroll('.service-card');
         sectionAnimations.staggerCardsOnScroll('.client-card');
+        sectionAnimations.staggerCardsOnScroll('.partner-card');
         sectionAnimations.scaleInOnScroll('.cta-section');
+
+        // Parallax: decorative foreground blobs in Services section
+        const servicesParallaxLayers = document.querySelectorAll('.services-section .parallax-layer');
+        if (servicesParallaxLayers.length) {
+          servicesParallaxLayers.forEach(layer => {
+            const el = layer as HTMLElement;
+            const speed = parseFloat(el.dataset.speed || '0.35');
+            // Ensure GPU acceleration
+            el.style.willChange = el.style.willChange || 'transform';
+
+            gsap.fromTo(
+              el,
+              { yPercent: 10 * speed, xPercent: -5 * speed, force3D: true },
+              {
+                yPercent: -120 * speed,
+                xPercent: 5 * speed,
+                ease: 'none',
+                force3D: true,
+                scrollTrigger: {
+                  trigger: '.services-section',
+                  start: 'top bottom',
+                  end: 'bottom top',
+                  scrub: 0.5,
+                },
+              }
+            );
+          });
+        }
+
+        // Parallax: background layers in Services section (true background parallax)
+        const servicesBg = document.querySelector('.services-section .services-bg') as HTMLElement | null;
+        const servicesParticles = document.querySelector('.services-section .services-particles') as HTMLElement | null;
+        const servicesParticles2 = document.querySelector('.services-section .services-particles-2') as HTMLElement | null;
+
+        if (servicesBg) {
+          servicesBg.style.willChange = servicesBg.style.willChange || 'transform';
+          gsap.fromTo(
+            servicesBg,
+            { y: -40, force3D: true },
+            {
+              y: 40,
+              ease: 'none',
+              force3D: true,
+              scrollTrigger: {
+                trigger: '.services-section',
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: 0.5,
+              },
+            }
+          );
+        }
+
+        if (servicesParticles) {
+          servicesParticles.style.willChange = servicesParticles.style.willChange || 'transform, background-position';
+          gsap.fromTo(
+            servicesParticles,
+            { y: -120, backgroundPositionY: '0px', force3D: true },
+            {
+              y: 120,
+              backgroundPositionY: '160px',
+              ease: 'none',
+              force3D: true,
+              scrollTrigger: {
+                trigger: '.services-section',
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: 0.6,
+              },
+            }
+          );
+        }
+
+        if (servicesParticles2) {
+          servicesParticles2.style.willChange = servicesParticles2.style.willChange || 'transform, background-position';
+          gsap.fromTo(
+            servicesParticles2,
+            { y: -180, backgroundPositionY: '0px', force3D: true },
+            {
+              y: 180,
+              backgroundPositionY: '-220px',
+              ease: 'none',
+              force3D: true,
+              scrollTrigger: {
+                trigger: '.services-section',
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: 0.8,
+              },
+            }
+          );
+        }
         break;
 
       case 'services':
