@@ -277,6 +277,156 @@ export const sectionAnimations = {
     );
   },
 
+  // More organic entrance for service cards (less stiff)
+  staggerCardsOrganicOnScroll: (
+    elements: HTMLElement[] | string,
+    triggerElement?: HTMLElement | string
+  ) => {
+    const tl = gsap.fromTo(
+      elements,
+      {
+        opacity: 0,
+        y: 40,
+        scale: 0.96,
+        rotate: () => gsap.utils.random(-2, 2),
+      },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        rotate: 0,
+        duration: animationConfig.duration.normal,
+        ease: 'back.out(1.4)',
+        stagger: { each: 0.09, from: 'center' },
+        scrollTrigger: {
+          trigger: triggerElement || elements,
+          start: 'top 85%',
+          end: 'bottom 20%',
+          toggleActions: 'play none none reverse',
+        },
+        onStart: () => {
+          if (typeof elements === 'string') {
+            document.querySelectorAll(elements).forEach((el) => {
+              (el as HTMLElement).style.willChange = 'transform, opacity';
+            });
+          }
+        },
+        onComplete: () => {
+          if (typeof elements === 'string') {
+            document.querySelectorAll(elements).forEach((el) => {
+              (el as HTMLElement).style.willChange = '';
+            });
+          }
+        },
+      }
+    );
+    return tl;
+  },
+
+  // Simple direct fade-in with stagger (no movement)
+  staggerFadeOnScroll: (
+    elements: HTMLElement[] | string,
+    triggerElement?: HTMLElement | string
+  ) => {
+    const trigger = triggerElement || (typeof elements === 'string' ? '.services-section' : elements);
+    return gsap.from(
+      elements,
+      {
+        autoAlpha: 0,
+        duration: animationConfig.duration.normal,
+        ease: 'power2.out',
+        stagger: { each: 0.08 },
+        immediateRender: false,
+        scrollTrigger: {
+          trigger,
+          start: 'top 85%',
+          end: 'bottom 20%',
+          toggleActions: 'play none none none',
+          once: true,
+          fastScrollEnd: true,
+        },
+        onStart: () => {
+          if (typeof elements === 'string') {
+            document.querySelectorAll(elements).forEach((el) => {
+              (el as HTMLElement).style.willChange = 'opacity';
+            });
+          }
+        },
+        onComplete: () => {
+          if (typeof elements === 'string') {
+            document.querySelectorAll(elements).forEach((el) => {
+              (el as HTMLElement).style.willChange = '';
+            });
+          }
+        },
+      }
+    );
+  },
+
+  // Batched fade-in using ScrollTrigger.batch so each card animates on entry
+  staggerFadeBatchOnScroll: (selector: string) => {
+    // Set initial state so items are hidden until animated (pure fade)
+    gsap.set(selector, { autoAlpha: 0 });
+
+    const reveal = (batch: Element[] | NodeListOf<Element>) =>
+      gsap.to(batch, {
+        autoAlpha: 1,
+        duration: 0.6,
+        ease: 'power2.out',
+        stagger: { each: 0.08 },
+        overwrite: 'auto',
+      });
+
+    const st = ScrollTrigger.batch(selector, {
+      start: 'top 99%',
+      end: 'bottom 10%',
+      onEnter: (batch: Element[]) => reveal(batch),
+      onEnterBack: (batch: Element[]) => reveal(batch),
+    });
+
+    // Force an evaluation in case items are already in view
+    ScrollTrigger.refresh();
+
+    // Return a dummy tween for API consistency
+    return gsap.timeline();
+  },
+
+  // Per-item fade with an individual ScrollTrigger on each element
+  fadeEachOnScroll: (selector: string) => {
+    const items = Array.from(document.querySelectorAll<HTMLElement>(selector));
+    items.forEach((el) => {
+      ScrollTrigger.create({
+        trigger: el,
+        start: 'top 98%',
+        end: 'bottom 10%',
+        once: true,
+        onEnter: () => {
+          // Hint the browser for smoother compositing during fade
+          (el as HTMLElement).style.willChange = 'opacity';
+          // Set initial hidden state only right before animating to avoid post-init re-hide
+          if (!(el as HTMLElement).dataset.revealed) {
+            gsap.set(el, { opacity: 0 });
+          }
+          gsap.to(el, {
+            opacity: 1,
+            duration: 0.7,
+            ease: 'sine.out',
+            overwrite: 'auto',
+            onComplete: () => {
+              (el as HTMLElement).style.willChange = '';
+              (el as HTMLElement).dataset.revealed = '1';
+            },
+          });
+        },
+      });
+    });
+
+    // In case layout shifts after images load or hydration
+    requestAnimationFrame(() => ScrollTrigger.refresh());
+
+    return gsap.timeline();
+  },
+
   scaleInOnScroll: (element: HTMLElement | string, triggerElement?: HTMLElement | string) => {
     return gsap.fromTo(
       element,
@@ -470,7 +620,26 @@ export const animationUtils = {
 
         // Section animations
         sectionAnimations.fadeInOnScroll('.about-section');
-        sectionAnimations.staggerCardsOnScroll('.service-card');
+        // Use per-item fade for service cards for guaranteed visible entry
+        sectionAnimations.fadeEachOnScroll('.service-card');
+
+        // Safety: after load/hydration, refresh triggers and reveal any in-view cards
+        if (typeof window !== 'undefined') {
+          const onLoad = () => {
+            setTimeout(() => {
+              ScrollTrigger.refresh();
+              const cards = document.querySelectorAll('.service-card');
+              cards.forEach((el) => {
+                const rect = (el as HTMLElement).getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                  gsap.set(el, { autoAlpha: 1 });
+                }
+              });
+            }, 80);
+          };
+          if (document.readyState === 'complete') onLoad();
+          else window.addEventListener('load', onLoad, { once: true });
+        }
         sectionAnimations.staggerCardsOnScroll('.client-card');
         sectionAnimations.staggerCardsOnScroll('.partner-card');
         sectionAnimations.scaleInOnScroll('.cta-section');
@@ -563,6 +732,37 @@ export const animationUtils = {
                 end: 'bottom top',
                 scrub: 0.8,
               },
+            }
+          );
+        }
+
+        // Looping animations (non-scroll) for lively background
+        const servicesGradient = document.querySelector('.services-section .services-gradient') as HTMLElement | null;
+        const servicesAmbient = document.querySelector('.services-section .services-ambient') as HTMLElement | null;
+
+        if (servicesGradient) {
+          servicesGradient.style.willChange = servicesGradient.style.willChange || 'background-position, transform, opacity';
+          gsap.to(servicesGradient, {
+            backgroundPosition: '100% 50%, 0% 50%, 50% 0%',
+            duration: 22,
+            ease: 'sine.inOut',
+            repeat: -1,
+            yoyo: true,
+          });
+        }
+
+        if (servicesAmbient) {
+          servicesAmbient.style.willChange = servicesAmbient.style.willChange || 'transform, opacity';
+          gsap.fromTo(
+            servicesAmbient,
+            { xPercent: -30, opacity: 0 },
+            {
+              xPercent: 30,
+              opacity: 0.6,
+              duration: 12,
+              ease: 'sine.inOut',
+              repeat: -1,
+              yoyo: true,
             }
           );
         }

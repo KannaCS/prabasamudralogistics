@@ -135,6 +135,18 @@ export default function Home() {
       <section className="services-section relative py-20 bg-slate-900 text-white overflow-hidden">
         {/* gradient base */}
         <div className="services-bg absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950" aria-hidden />
+        {/* animated gradient mesh */}
+        <div
+          className="services-gradient pointer-events-none absolute -inset-20 opacity-35 blur-3xl mix-blend-screen"
+          aria-hidden
+          style={{
+            backgroundImage:
+              'radial-gradient(40% 40% at 20% 20%, rgba(99,102,241,0.35) 0%, rgba(99,102,241,0) 60%), radial-gradient(35% 35% at 80% 30%, rgba(16,185,129,0.32) 0%, rgba(16,185,129,0) 60%), radial-gradient(45% 45% at 50% 80%, rgba(14,165,233,0.28) 0%, rgba(14,165,233,0) 60%)',
+            backgroundSize: '140% 140%, 140% 140%, 140% 140%',
+            backgroundPosition: '0% 0%, 100% 0%, 50% 100%',
+            willChange: 'transform, background-position',
+          }}
+        />
         {/* particles layer */}
         <div
           className="services-particles absolute inset-0 opacity-40 [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)]"
@@ -154,6 +166,17 @@ export default function Home() {
             backgroundSize: '34px 34px',
             backgroundPosition: '0 0',
             willChange: 'transform, background-position',
+          }}
+        />
+        {/* ambient light sweep */}
+        <div
+          className="services-ambient pointer-events-none absolute -inset-x-1/2 inset-y-0 opacity-0"
+          aria-hidden
+          style={{
+            background:
+              'linear-gradient(70deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.08) 35%, rgba(255,255,255,0.14) 50%, rgba(255,255,255,0.08) 65%, rgba(255,255,255,0) 100%)',
+            transform: 'translateX(-30%)',
+            willChange: 'transform, opacity',
           }}
         />
         {/* parallax blobs */}

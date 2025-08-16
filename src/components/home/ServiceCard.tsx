@@ -16,7 +16,7 @@ export default function ServiceCard({ icon, title, description, href, className 
   return (
     <Wrapper
       {...wrapperProps}
-      className={`service-card block rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition-all focus-within:shadow-md h-full outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-primary-200 ${className}`}
+      className={`service-card block rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition-transform transition-shadow transition-colors duration-200 focus-within:shadow-md h-full outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-primary-200 ${className}`}
     >
       <div className="service-icon w-14 h-14 bg-primary-50 rounded-lg flex items-center justify-center mb-4">
         {icon}
