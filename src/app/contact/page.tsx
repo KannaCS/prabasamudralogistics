@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { initAnimations } from "@/lib/animations";
+import SectionTitle from "@/components/ui/section-title";
 
 export default function ContactPage() {
   const { t } = useLanguage();
@@ -117,17 +118,25 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="bg-gray-50 py-12">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="relative mb-8 rounded-2xl overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-blue-500/10 to-emerald-500/10" />
-            <div className="relative backdrop-blur-[1px] px-6 py-8 sm:px-10 sm:py-10">
-              <h1 className="text-3xl sm:text-4xl font-bold text-center">{t("contactPage.title")}</h1>
-              <p className="mt-2 text-center text-gray-600">{t("contactPage.formTitle")}</p>
-            </div>
+    <main className="flex min-h-screen flex-col">
+      {/* Hero Section - match home gradient look */}
+      <section className="relative text-white">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-700 via-primary-600 to-primary-500" aria-hidden="true" />
+        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_top_right,theme(colors.secondary.400),transparent_50%)]" aria-hidden />
+        <div className="relative container mx-auto px-4 py-16 md:py-24">
+          <div className="max-w-3xl">
+            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
+              {t("contactPage.title")}
+            </h1>
+            <p className="mt-4 text-white/90 text-lg md:text-xl">
+              {t("contactPage.formTitle")}
+            </p>
           </div>
+        </div>
+      </section>
 
+      <section className="py-12 md:py-16 bg-white">
+        <div className="container mx-auto px-4">
           {/* Quick Actions */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 items-stretch">
             <a href="tel:+62817726068" className="group block w-full h-full rounded-xl overflow-hidden border border-gray-200 bg-white p-4 shadow-sm hover:shadow-md transition-all">
@@ -167,7 +176,7 @@ export default function ContactPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {/* Contact Information */}
-            <div className="contact-info bg-white rounded-lg shadow-md p-8">
+            <div className="contact-info bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
               <h2 className="text-2xl font-semibold mb-6">{t("contactPage.office")}</h2>
 
               <div className="space-y-4">
@@ -275,7 +284,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div className="contact-form bg-white rounded-lg shadow-md p-8">
+            <div className="contact-form bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
               <h2 className="text-2xl font-semibold mb-6">{t("contactPage.formTitle")}</h2>
 
               {success ? (
@@ -465,7 +474,7 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className={`btn w-full px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-600 transition-colors flex items-center justify-center gap-2 ${
+                      className={`btn w-full px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-600 transition-colors flex items-center justify-center gap-2 ${
                         isSubmitting ? "opacity-70 cursor-not-allowed" : ""
                       }`}
                     >
@@ -485,8 +494,8 @@ export default function ContactPage() {
 
           {/* Google Maps */}
           <div className="mt-8">
-            <h2 className="text-2xl font-semibold mb-6 text-center">{t("contactPage.location")}</h2>
-            <div className="relative rounded-lg overflow-hidden shadow-md h-96">
+            <SectionTitle title={t("contactPage.location")} align="center" />
+            <div className="relative rounded-2xl overflow-hidden border border-gray-200 shadow-sm h-96">
               {!mapLoaded && (
                 <div className="absolute inset-0 animate-pulse bg-gradient-to-br from-gray-100 to-gray-200" />
               )}
@@ -503,7 +512,8 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
+

@@ -139,13 +139,31 @@ export default function BookingPage() {
   };
 
   return (
-    <div className="bg-gray-50 py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+    <main className="flex min-h-screen flex-col">
+      {/* Hero header to match Home theme */}
+      <section className="relative text-white">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-700 via-primary-600 to-primary-500" aria-hidden="true" />
+        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_top_right,theme(colors.secondary.400),transparent_50%)]" aria-hidden />
+        <div className="relative container mx-auto px-4 py-14 md:py-20">
+          <div className="max-w-3xl">
+            <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-white">
+              {t("booking.title")}
+            </h1>
+            <p className="mt-4 text-white/90 text-lg max-w-2xl">
+              {t("booking.subtitle")}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Content section */}
+      <section className="relative py-10 md:py-12 bg-gray-50">
+        <div className="container mx-auto px-4 -mt-10 md:-mt-14">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Main form card */}
           <div className="lg:col-span-8">
             <div className="booking-form bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8">
-              <h1 className="text-3xl font-bold mb-2">{t("booking.title")}</h1>
+              <h2 className="text-2xl font-bold mb-2 text-gray-900">{t("booking.title")}</h2>
               <p className="text-gray-600 mb-6">{t("booking.subtitle")}</p>
 
               {/* Stepper */}
@@ -658,8 +676,9 @@ export default function BookingPage() {
               </div>
             </div>
           </aside>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
