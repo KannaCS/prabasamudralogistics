@@ -1,6 +1,6 @@
-# PT. Praba Samudra Logistic - Frontend
+# PT. Praba Samudra Logistics - Frontend
 
-This is the frontend application for PT. Praba Samudra Logistic, a freight forwarding and logistics company in Indonesia.
+This is the frontend application for PT. Praba Samudra Logistics, a freight forwarding and logistics company in Indonesia.
 
 ## Features
 
@@ -112,7 +112,7 @@ This application can be deployed to any hosting service that supports Node.js ap
 
 ## API Integration
 
-This frontend application communicates with the PT. Praba Samudra Logistic backend API. The API endpoints are defined in the `.env.local` file.
+This frontend application communicates with the PT. Praba Samudra Logistics backend API. The API endpoints are defined in the `.env.local` file.
 
 ## Browser Support
 

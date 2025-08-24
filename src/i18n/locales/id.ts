@@ -19,15 +19,15 @@ export const id = {
   homePage: {
     hero: {
       title: "Solusi Logistik Terpercaya untuk Bisnis Anda",
-      subtitle: "PT. Praba Samudra Logistic menyediakan layanan pengiriman dan freight forwarding yang efisien, aman, dan terpercaya untuk kebutuhan domestik dan internasional.",
+      subtitle: "PT. Praba Samudra Logistics menyediakan layanan pengiriman dan freight forwarding yang efisien, aman, dan terpercaya untuk kebutuhan domestik dan internasional.",
       bookingButton: "Booking Sekarang",
       trackingButton: "Lacak Pengiriman"
     },
     about: {
       title: "Tentang Kami",
-      content1: "PT. Praba Samudra Logistic adalah perusahaan logistik dan freight forwarder yang melayani pengiriman barang ke berbagai tujuan domestik dan internasional serta penanganan impor dan ekspor barang.",
+      content1: "PT. Praba Samudra Logistics adalah perusahaan logistik dan freight forwarder yang melayani pengiriman barang ke berbagai tujuan domestik dan internasional serta penanganan impor dan ekspor barang.",
       content2: "Untuk meningkatkan kualitas layanan, kami menjalin kemitraan dengan berbagai perusahaan di dalam dan luar negeri yang bergerak di bidang transportasi, pergudangan, penanganan kargo, dan pelayaran.",
-      content3: "Dengan dukungan tenaga profesional berpengalaman serta jaringan yang luas mencakup hampir seluruh provinsi di Indonesia dan jaringan internasional, PT. Praba Samudra Logistic mampu bersaing dengan perusahaan sejenis.",
+      content3: "Dengan dukungan tenaga profesional berpengalaman serta jaringan yang luas mencakup hampir seluruh provinsi di Indonesia dan jaringan internasional, PT. Praba Samudra Logistics mampu bersaing dengan perusahaan sejenis.",
       content4: "Dalam waktu singkat, kami berhasil meningkatkan jumlah pelanggan berkat komitmen kami untuk memastikan barang sampai ke tujuan dengan aman, tepat waktu, dan dalam kondisi yang baik. Kepuasan pelanggan selalu menjadi prioritas utama kami.",
       vision: "Visi",
       visionContent: "Menjadi penyedia jasa logistik dengan jaringan yang kuat, menghadirkan solusi komprehensif, unggul, terpercaya, dan handal",
@@ -89,7 +89,7 @@ export const id = {
   },
   booking: {
     title: "Booking Online",
-    subtitle: "Silakan lengkapi formulir di bawah ini untuk melakukan booking layanan PT. Praba Samudra Logistic. Tim kami akan segera menghubungi Anda untuk konfirmasi dan detail lebih lanjut.",
+    subtitle: "Silakan lengkapi formulir di bawah ini untuk melakukan booking layanan PT. Praba Samudra Logistics. Tim kami akan segera menghubungi Anda untuk konfirmasi dan detail lebih lanjut.",
     contactInfo: {
       title: "Informasi Kontak",
       fullName: "Nama Lengkap",
@@ -141,7 +141,7 @@ export const id = {
     submit: "Kirim Booking",
     success: {
       title: "Booking Berhasil!",
-      message: "Terima kasih telah melakukan booking layanan PT. Praba Samudra Logistic. Tim kami akan segera menghubungi Anda untuk konfirmasi dan detail lebih lanjut.",
+      message: "Terima kasih telah melakukan booking layanan PT. Praba Samudra Logistics. Tim kami akan segera menghubungi Anda untuk konfirmasi dan detail lebih lanjut.",
       bookingNumber: "Nomor Booking:",
       backToHome: "Kembali ke Beranda"
     }
@@ -149,7 +149,7 @@ export const id = {
   servicesPage: {
     hero: {
       title: "Layanan Kami",
-      subtitle: "PT. Praba Samudra Logistics menyediakan berbagai layanan logistik dan freight forwarding untuk memenuhi kebutuhan bisnis Anda."
+      subtitle: "PT. Praba Samudra Logisticss menyediakan berbagai layanan logistik dan freight forwarding untuk memenuhi kebutuhan bisnis Anda."
     },
     featureTitle: "Fitur Layanan:",
     learnMore: "Pelajari Lebih Lanjut",
@@ -167,7 +167,7 @@ export const id = {
         ],
         heroSubtitle: "Solusi pengiriman kargo domestik dan internasional yang efisien dan andal untuk kebutuhan bisnis Anda.",
         aboutTitle: "Tentang Layanan Freight Forwarding",
-        aboutContent1: "PT. Praba Samudra Logistics menyediakan layanan freight forwarding komprehensif yang menangani semua aspek pengiriman Anda dari asal hingga tujuan akhir. Dengan jaringan global dan tim berpengalaman kami, kami memastikan pengiriman Anda berjalan lancar, tepat waktu, dan sesuai anggaran.",
+        aboutContent1: "PT. Praba Samudra Logisticss menyediakan layanan freight forwarding komprehensif yang menangani semua aspek pengiriman Anda dari asal hingga tujuan akhir. Dengan jaringan global dan tim berpengalaman kami, kami memastikan pengiriman Anda berjalan lancar, tepat waktu, dan sesuai anggaran.",
         aboutContent2: "Kami menangani berbagai jenis pengiriman termasuk kargo umum, barang berbahaya, kargo ukuran besar, dan proyek khusus. Layanan kami meliputi dokumentasi, pengurusan bea cukai, konsolidasi kargo, dan solusi logistik end-to-end yang disesuaikan dengan kebutuhan bisnis spesifik Anda.",
         servicesTitle: "Layanan Freight Forwarding",
         servicesList: {
@@ -277,7 +277,7 @@ export const id = {
         ],
         heroSubtitle: "Solusi transportasi darat yang andal dengan berbagai pilihan armada untuk kebutuhan logistik Anda.",
         aboutTitle: "Tentang Layanan Sewa Truk",
-        aboutContent1: "PT. Praba Samudra Logistics menyediakan layanan sewa truk dengan berbagai ukuran dan jenis untuk memenuhi kebutuhan transportasi darat Anda. Dengan armada yang terawat dengan baik dan pengemudi profesional, kami menjamin pengiriman barang Anda tepat waktu dan aman ke tujuan.",
+        aboutContent1: "PT. Praba Samudra Logisticss menyediakan layanan sewa truk dengan berbagai ukuran dan jenis untuk memenuhi kebutuhan transportasi darat Anda. Dengan armada yang terawat dengan baik dan pengemudi profesional, kami menjamin pengiriman barang Anda tepat waktu dan aman ke tujuan.",
         aboutContent2: "Kami melayani pengiriman dalam kota, antar kota, dan bahkan antar pulau di Indonesia. Armada kami dilengkapi dengan sistem pelacakan real-time sehingga Anda dapat memantau posisi barang Anda setiap saat.",
         truckTypesTitle: "Tipe Armada Truk",
         capacity: "Kapasitas",
@@ -337,7 +337,7 @@ export const id = {
         faqsTitle: "Pertanyaan yang Sering Diajukan",
         faqs: {
           rental: {
-            question: "Bagaimana cara menyewa truk dari PT. Praba Samudra Logistics?",
+            question: "Bagaimana cara menyewa truk dari PT. Praba Samudra Logisticss?",
             answer: "Anda dapat menghubungi tim kami melalui telepon, email, atau dengan mengisi formulir pemesanan di situs web kami. Tim kami akan membantu Anda memilih jenis truk yang tepat untuk kebutuhan Anda dan memberikan penawaran harga."
           },
           availability: {
@@ -373,7 +373,7 @@ export const id = {
         ],
         heroSubtitle: "Solusi transportasi laut yang andal dengan berbagai pilihan kapal LCT untuk kebutuhan logistik Anda.",
         aboutTitle: "Tentang Layanan Sewa Kapal LCT",
-        aboutContent1: "PT. Praba Samudra Logistics menyediakan layanan sewa kapal LCT (Landing Craft Tank) dengan berbagai ukuran untuk memenuhi kebutuhan transportasi laut Anda. Kapal LCT ideal untuk mengangkut kargo berat, alat berat, dan kendaraan ke daerah kepulauan dan lokasi yang sulit dijangkau dengan transportasi darat.",
+        aboutContent1: "PT. Praba Samudra Logisticss menyediakan layanan sewa kapal LCT (Landing Craft Tank) dengan berbagai ukuran untuk memenuhi kebutuhan transportasi laut Anda. Kapal LCT ideal untuk mengangkut kargo berat, alat berat, dan kendaraan ke daerah kepulauan dan lokasi yang sulit dijangkau dengan transportasi darat.",
         aboutContent2: "Dengan kru berpengalaman dan armada yang terawat dengan baik, kami menjamin pengiriman barang Anda tepat waktu dan aman ke tujuan. Kami melayani rute ke berbagai pulau di Indonesia dan menyediakan layanan pendukung seperti perencanaan rute, penanganan dokumentasi, dan penanganan kargo.",
         shipTypesTitle: "Tipe Armada Kapal LCT",
         capacity: "Kapasitas",
@@ -421,7 +421,7 @@ export const id = {
         faqsTitle: "Pertanyaan yang Sering Diajukan",
         faqs: {
           howToRent: {
-            question: "Bagaimana cara menyewa kapal LCT dari PT. Praba Samudra Logistics?",
+            question: "Bagaimana cara menyewa kapal LCT dari PT. Praba Samudra Logisticss?",
             answer: "Anda dapat menghubungi tim kami melalui telepon, email, atau dengan mengisi formulir pemesanan di situs web kami. Tim kami akan membantu Anda memilih jenis kapal LCT yang tepat untuk kebutuhan Anda dan memberikan penawaran harga."
           },
           minimumTime: {
@@ -457,7 +457,7 @@ export const id = {
         ],
         heroSubtitle: "Solusi komprehensif untuk kebutuhan ekspor dan impor Anda dengan penanganan dokumentasi dan kepabeanan profesional.",
         aboutTitle: "Tentang Layanan Ekspor & Impor",
-        aboutContent1: "PT. Praba Samudra Logistics menyediakan layanan penanganan ekspor dan impor komprehensif untuk membantu bisnis Anda menembus pasar global. Kami memiliki tim ahli yang berpengalaman dalam menangani berbagai aspek perdagangan internasional, dari pemrosesan dokumen hingga kepabeanan dan regulasi.",
+        aboutContent1: "PT. Praba Samudra Logisticss menyediakan layanan penanganan ekspor dan impor komprehensif untuk membantu bisnis Anda menembus pasar global. Kami memiliki tim ahli yang berpengalaman dalam menangani berbagai aspek perdagangan internasional, dari pemrosesan dokumen hingga kepabeanan dan regulasi.",
         aboutContent2: "Dengan pemahaman mendalam tentang prosedur dan regulasi ekspor-impor di berbagai negara, kami memastikan proses pengiriman barang Anda berjalan lancar dan efisien. Kami juga menawarkan konsultasi untuk membantu Anda memahami persyaratan dan regulasi perdagangan internasional yang kompleks.",
         servicesTitle: "Layanan Ekspor & Impor",
         servicesList: {
@@ -531,7 +531,7 @@ export const id = {
             answer: "Waktu yang diperlukan untuk customs clearance bervariasi tergantung pada jenis barang, negara asal/tujuan, dan kelengkapan dokumen. Umumnya, proses ini dapat memakan waktu 1-5 hari kerja. Dengan layanan kami, kami berusaha mempercepat proses ini semaksimal mungkin."
           },
           restrictedGoods: {
-            question: "Apakah PT. Praba Samudra Logistics menangani barang yang termasuk kategori Lartas?",
+            question: "Apakah PT. Praba Samudra Logisticss menangani barang yang termasuk kategori Lartas?",
             answer: "Ya, kami menangani barang Lartas dan membantu memenuhi persyaratan izin khusus yang diperlukan dari instansi terkait seperti BPOM, Kementerian Kesehatan, atau Kementerian Perdagangan. Tim kami berpengalaman dalam menangani berbagai jenis barang dengan regulasi khusus."
           },
           customsDuty: {
@@ -539,7 +539,7 @@ export const id = {
             answer: "Kami dapat membantu Anda menghitung perkiraan bea masuk berdasarkan HS Code (Harmonized System Code) dari barang yang akan diimpor. Kami juga menawarkan konsultasi untuk mengoptimalkan klasifikasi barang Anda sesuai dengan peraturan yang berlaku."
           },
           doorToDoor: {
-            question: "Apakah PT. Praba Samudra Logistics menyediakan layanan door-to-door untuk ekspor-impor?",
+            question: "Apakah PT. Praba Samudra Logisticss menyediakan layanan door-to-door untuk ekspor-impor?",
             answer: "Ya, kami menyediakan layanan ekspor-impor door-to-door yang komprehensif, mulai dari pengambilan barang di lokasi pengirim, penanganan dokumen dan kepabeanan, transportasi internasional, hingga pengiriman ke alamat penerima akhir."
           }
         },
@@ -559,7 +559,7 @@ export const id = {
         ],
         heroSubtitle: "Layanan pengiriman barang ke seluruh Indonesia dengan berbagai pilihan moda transportasi untuk kebutuhan logistik Anda.",
         aboutTitle: "Tentang Layanan Pengiriman Domestik",
-        aboutContent1: "PT. Praba Samudra Logistics menyediakan layanan pengiriman domestik komprehensif ke seluruh Indonesia. Dengan armada yang beragam dan jaringan yang luas, kami memastikan barang Anda tiba dengan aman dan tepat waktu di tujuan, baik ke kota-kota besar maupun daerah terpencil.",
+        aboutContent1: "PT. Praba Samudra Logisticss menyediakan layanan pengiriman domestik komprehensif ke seluruh Indonesia. Dengan armada yang beragam dan jaringan yang luas, kami memastikan barang Anda tiba dengan aman dan tepat waktu di tujuan, baik ke kota-kota besar maupun daerah terpencil.",
         aboutContent2: "Kami menawarkan berbagai pilihan moda transportasi, termasuk darat, laut, dan udara, untuk memenuhi kebutuhan pengiriman Anda dengan berbagai tingkat urgensi dan jenis barang. Layanan kami juga dilengkapi dengan sistem pelacakan yang memungkinkan Anda memantau status pengiriman secara real-time.",
         servicesTitle: "Jenis Layanan Pengiriman",
         servicesList: {
@@ -600,7 +600,7 @@ export const id = {
           }
         },
         coverageTitle: "Jangkauan Kami",
-        coverageDescription: "PT. Praba Samudra Logistics melayani rute pengiriman di seluruh Indonesia, meliputi pulau-pulau utama dan kota-kota besar hingga daerah terpencil. Jaringan kami yang luas memungkinkan kami menyediakan solusi pengiriman yang efisien dan andal untuk kebutuhan Anda.",
+        coverageDescription: "PT. Praba Samudra Logisticss melayani rute pengiriman di seluruh Indonesia, meliputi pulau-pulau utama dan kota-kota besar hingga daerah terpencil. Jaringan kami yang luas memungkinkan kami menyediakan solusi pengiriman yang efisien dan andal untuk kebutuhan Anda.",
         destinationDistribution: "Distribusi Tujuan",
         serviceCapabilities: "Kemampuan Layanan",
         destinations: {
@@ -635,7 +635,7 @@ export const id = {
             answer: "Anda dapat melacak pengiriman Anda melalui sistem pelacakan online kami dengan memasukkan nomor referensi pengiriman Anda di halaman Lacak Pengiriman di situs web kami. Anda juga dapat menghubungi tim layanan pelanggan kami untuk informasi terbaru."
           },
           insurance: {
-            question: "Apakah PT. Praba Samudra Logistics menyediakan layanan pick-up?",
+            question: "Apakah PT. Praba Samudra Logisticss menyediakan layanan pick-up?",
             answer: "Ya, kami menyediakan layanan pick-up dari lokasi pengirim sebagai bagian dari layanan door-to-door kami. Kami akan mengatur waktu pick-up sesuai dengan jadwal yang Anda inginkan."
           },
           remoteAreas: {
@@ -659,7 +659,7 @@ export const id = {
         ],
         heroSubtitle: "Solusi pengiriman kendaraan dan kargo antar pulau yang efisien dan aman menggunakan kapal Roll-On Roll-Off.",
         aboutTitle: "Tentang Jasa Pengiriman Kendaraan dan Kargo via Kapal Ro-Ro",
-        aboutContent1: "PT. Praba Samudra Logistics menyediakan layanan khusus pengiriman kendaraan dan kargo menggunakan kapal Ro-Ro (Roll-On Roll-Off) untuk rute antar pelabuhan di seluruh Indonesia. Kapal Ro-Ro memungkinkan kendaraan dan kargo dapat langsung dikendarai naik ke kapal tanpa memerlukan alat pengangkat berat, menjadikannya metode pengiriman yang efisien, cepat, dan aman.",
+        aboutContent1: "PT. Praba Samudra Logisticss menyediakan layanan khusus pengiriman kendaraan dan kargo menggunakan kapal Ro-Ro (Roll-On Roll-Off) untuk rute antar pelabuhan di seluruh Indonesia. Kapal Ro-Ro memungkinkan kendaraan dan kargo dapat langsung dikendarai naik ke kapal tanpa memerlukan alat pengangkat berat, menjadikannya metode pengiriman yang efisien, cepat, dan aman.",
         aboutContent2: "Kami melayani pengiriman mobil pribadi, truk, motor, alat berat, hingga general cargo dengan dukungan jadwal pengiriman rutin dan tim profesional. Layanan kami praktis, hemat biaya, dan terpercaya untuk semua kebutuhan transportasi kendaraan dan kargo antar pulau Anda.",
         cargoTypesTitle: "Jenis Kendaraan & Kargo yang Bisa Dikirim",
         cargoTypesTable: {
@@ -813,14 +813,14 @@ export const id = {
   },
   footer: {
     about: "Tentang Kami",
-    aboutText: "PT. Praba Samudra Logistic adalah perusahaan logistik terintegrasi yang menawarkan layanan pengiriman nasional dan internasional dengan komitmen untuk keandalan dan kepuasan pelanggan.",
+    aboutText: "PT. Praba Samudra Logistics adalah perusahaan logistik terintegrasi yang menawarkan layanan pengiriman nasional dan internasional dengan komitmen untuk keandalan dan kepuasan pelanggan.",
     quickLinks: "Tautan Cepat",
     services: "Layanan Kami",
     contact: "Kontak",
     address: "Alamat",
     phone: "Telepon",
     email: "Email",
-    copyright: "© 2025 PT. Praba Samudra Logistic. Hak Cipta Dilindungi."
+    copyright: "© 2025 PT. Praba Samudra Logistics. Hak Cipta Dilindungi."
   },
   paymentMethods: {
     title: "Metode Pembayaran yang Didukung",

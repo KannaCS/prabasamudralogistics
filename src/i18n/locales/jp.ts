@@ -550,7 +550,7 @@ export const jp = {
             answer: "通関手続きに必要な時間は、商品の種類、原産国/目的国、および書類の完全性によって異なります。一般的に、このプロセスは1〜5営業日かかることがあります。当社のサービスでは、このプロセスを可能な限り加速するよう努めています。"
           },
           restrictedGoods: {
-            question: "PT. Praba Samudra Logisticsは規制品を取り扱っていますか？",
+            question: "PT. Praba Samudra Logisticssは規制品を取り扱っていますか？",
             answer: "はい、当社は規制品を取り扱い、BPOM、保健省、商務省などの関連機関から必要な特別許可を取得するお手伝いをしています。当社のチームは特別な規制を持つ様々な種類の商品を取り扱った経験があります。"
           },
           customsDuty: {
@@ -558,7 +558,7 @@ export const jp = {
             answer: "当社は輸入予定の商品のHSコード（統一システムコード）に基づいて、予想される輸入関税の計算をお手伝いします。また、適用される規制に従って商品の分類を最適化するためのコンサルテーションも提供しています。"
           },
           doorToDoor: {
-            question: "PT. Praba Samudra Logisticsは輸出入のためのドア・ツー・ドアサービスを提供していますか？",
+            question: "PT. Praba Samudra Logisticssは輸出入のためのドア・ツー・ドアサービスを提供していますか？",
             answer: "はい、当社は発送者の場所での商品の集荷、書類と通関の処理、国際輸送、最終受取人の住所への配送まで、包括的な輸出入ドア・ツー・ドアサービスを提供しています。"
           }
         },
@@ -654,7 +654,7 @@ export const jp = {
             answer: "当社のウェブサイトの「荷物追跡」ページで配送参照番号を入力することで、オンライン追跡システムを通じて配送を追跡できます。また、最新情報については当社のカスタマーサービスチームにお問い合わせいただけます。"
           },
           insurance: {
-            question: "PT. Praba Samudra Logisticsは集荷サービスを提供していますか？",
+            question: "PT. Praba Samudra Logisticssは集荷サービスを提供していますか？",
             answer: "はい、当社はドア・ツー・ドアサービスの一部として発送者の場所からの集荷サービスを提供しています。お客様の希望するスケジュールに合わせて集荷時間を調整します。"
           },
           remoteAreas: {
@@ -678,7 +678,7 @@ export const jp = {
         ],
         heroSubtitle: "ロールオン・ロールオフ船を使用した効率的で安全な島間車両・貨物輸送ソリューション。",
         aboutTitle: "Ro-Ro船による車両・貨物輸送サービスについて",
-        aboutContent1: "PT. Praba Samudra Logisticsは、インドネシア全土の港間のルートにRo-Ro（ロールオン・ロールオフ）船を使用した専門的な車両・貨物輸送サービスを提供しています。Ro-Ro船は重機を使わずに車両や貨物を直接船に運転して乗せることができ、効率的で迅速、安全な輸送方法となります。",
+        aboutContent1: "PT. Praba Samudra Logisticssは、インドネシア全土の港間のルートにRo-Ro（ロールオン・ロールオフ）船を使用した専門的な車両・貨物輸送サービスを提供しています。Ro-Ro船は重機を使わずに車両や貨物を直接船に運転して乗せることができ、効率的で迅速、安全な輸送方法となります。",
         aboutContent2: "当社では乗用車、トラック、バイク、重機、一般貨物の輸送を、定期的な輸送スケジュールとプロフェッショナルなチームのサポートで取り扱っています。当社のサービスは実用的でコスト効率が良く、島間の車両・貨物輸送のニーズに信頼性のあるソリューションを提供します。",
         cargoTypesTitle: "輸送可能な車両・貨物の種類",
         cargoTypesTable: {
@@ -839,7 +839,7 @@ export const jp = {
     address: "住所",
     phone: "電話",
     email: "メール",
-    copyright: "© 2025 PT. Praba Samudra Logistic. All Rights Reserved."
+    copyright: "© 2025 PT. Praba Samudra Logistics. All Rights Reserved."
   },
   paymentMethods: {
     title: "対応しているお支払い方法",

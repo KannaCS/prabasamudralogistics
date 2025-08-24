@@ -19,15 +19,15 @@ export const en = {
   homePage: {
     hero: {
       title: "Trusted Logistics Solutions for Your Business",
-      subtitle: "PT. Praba Samudra Logistic provides efficient, safe, and reliable shipping and freight forwarding services for both domestic and international needs.",
+      subtitle: "PT. Praba Samudra Logistics provides efficient, safe, and reliable shipping and freight forwarding services for both domestic and international needs.",
       bookingButton: "Book Now",
       trackingButton: "Track Shipment"
     },
     about: {
       title: "About Us",
-      content1: "PT. Praba Samudra Logistic is a logistics and freight forwarding company that serves cargo shipments to various domestic and international destinations and handles import and export of goods.",
+      content1: "PT. Praba Samudra Logistics is a logistics and freight forwarding company that serves cargo shipments to various domestic and international destinations and handles import and export of goods.",
       content2: "To improve the quality of service, we establish partnerships with various companies at home and abroad engaged in transportation, warehousing, cargo handling, and shipping.",
-      content3: "With the support of experienced professionals and an extensive network covering almost all provinces in Indonesia and an international network, PT. Praba Samudra Logistic is able to compete with similar companies.",
+      content3: "With the support of experienced professionals and an extensive network covering almost all provinces in Indonesia and an international network, PT. Praba Samudra Logistics is able to compete with similar companies.",
       content4: "In a short time, we have managed to increase the number of customers thanks to our commitment to ensure goods reach their destination safely, on time, and in good condition. Customer satisfaction is always our top priority.",
       vision: "Vision",
       visionContent: "To become a logistics service provider with a strong network, delivering comprehensive, superior, reliable, and dependable solutions",
@@ -89,7 +89,7 @@ export const en = {
   },
   booking: {
     title: "Online Booking",
-    subtitle: "Please complete the form below to book PT. Praba Samudra Logistic services. Our team will contact you shortly for confirmation and further details.",
+    subtitle: "Please complete the form below to book PT. Praba Samudra Logistics services. Our team will contact you shortly for confirmation and further details.",
     contactInfo: {
       title: "Contact Information",
       fullName: "Full Name",
@@ -141,7 +141,7 @@ export const en = {
     submit: "Submit Booking",
     success: {
       title: "Booking Successful!",
-      message: "Thank you for booking PT. Praba Samudra Logistic services. Our team will contact you shortly for confirmation and further details.",
+      message: "Thank you for booking PT. Praba Samudra Logistics services. Our team will contact you shortly for confirmation and further details.",
       bookingNumber: "Booking Number:",
       backToHome: "Back to Home"
     }
@@ -149,7 +149,7 @@ export const en = {
   servicesPage: {
     hero: {
       title: "Our Services",
-      subtitle: "PT. Praba Samudra Logistics provides various logistics and freight forwarding services to meet your business needs."
+      subtitle: "PT. Praba Samudra Logisticss provides various logistics and freight forwarding services to meet your business needs."
     },
     featureTitle: "Service Features:",
     learnMore: "Learn More",
@@ -167,7 +167,7 @@ export const en = {
         ],
         heroSubtitle: "Efficient and reliable domestic and international cargo shipping solutions for your business needs.",
         aboutTitle: "About Freight Forwarding Services",
-        aboutContent1: "PT. Praba Samudra Logistics provides comprehensive freight forwarding services that handle all aspects of your shipment from origin to final destination. With our global network and experienced team, we ensure your shipments run smoothly, on time, and within budget.",
+        aboutContent1: "PT. Praba Samudra Logisticss provides comprehensive freight forwarding services that handle all aspects of your shipment from origin to final destination. With our global network and experienced team, we ensure your shipments run smoothly, on time, and within budget.",
         aboutContent2: "We handle various types of shipments including general cargo, hazardous goods, oversized cargo, and special projects. Our services include documentation, customs clearance, cargo consolidation, and end-to-end logistics solutions tailored to your specific business needs.",
         servicesTitle: "Freight Forwarding Services",
         servicesList: {
@@ -277,7 +277,7 @@ export const en = {
         ],
         heroSubtitle: "Reliable land transportation solutions with a variety of fleet options for your logistics needs.",
         aboutTitle: "About Truck Rental Services",
-        aboutContent1: "PT. Praba Samudra Logistics provides truck rental services with various sizes and types to meet your land transportation needs. With a well-maintained fleet and professional drivers, we guarantee on-time and safe delivery of your goods to their destination.",
+        aboutContent1: "PT. Praba Samudra Logisticss provides truck rental services with various sizes and types to meet your land transportation needs. With a well-maintained fleet and professional drivers, we guarantee on-time and safe delivery of your goods to their destination.",
         aboutContent2: "We serve deliveries within cities, between cities, and even between islands in Indonesia. Our fleet is equipped with a real-time tracking system so you can monitor the position of your goods at any time.",
         truckTypesTitle: "Truck Fleet Types",
         capacity: "Capacity",
@@ -337,7 +337,7 @@ export const en = {
         faqsTitle: "Frequently Asked Questions",
         faqs: {
           rental: {
-            question: "How do I rent a truck from PT. Praba Samudra Logistics?",
+            question: "How do I rent a truck from PT. Praba Samudra Logisticss?",
             answer: "You can contact our team by phone, email, or by filling out the booking form on our website. Our team will help you choose the right type of truck for your needs and provide a price quote."
           },
           availability: {
@@ -373,7 +373,7 @@ export const en = {
         ],
         heroSubtitle: "Reliable sea transportation solutions with various LCT ship options for your logistics needs.",
         aboutTitle: "About LCT Ship Rental Services",
-        aboutContent1: "PT. Praba Samudra Logistics provides LCT (Landing Craft Tank) ship rental services with various sizes to meet your sea transportation needs. LCT ships are ideal for transporting heavy cargo, heavy equipment, and vehicles to island areas and locations that are difficult to reach by land transportation.",
+        aboutContent1: "PT. Praba Samudra Logisticss provides LCT (Landing Craft Tank) ship rental services with various sizes to meet your sea transportation needs. LCT ships are ideal for transporting heavy cargo, heavy equipment, and vehicles to island areas and locations that are difficult to reach by land transportation.",
         aboutContent2: "With experienced crew and well-maintained fleet, we guarantee the on-time and safe delivery of your goods to their destination. We serve routes to various islands in Indonesia and provide supporting services such as route planning, documentation handling, and cargo handling.",
         shipTypesTitle: "LCT Ship Fleet Types",
         capacity: "Capacity",
@@ -421,7 +421,7 @@ export const en = {
         faqsTitle: "Frequently Asked Questions",
         faqs: {
           howToRent: {
-            question: "How do I rent an LCT ship from PT. Praba Samudra Logistics?",
+            question: "How do I rent an LCT ship from PT. Praba Samudra Logisticss?",
             answer: "You can contact our team by phone, email, or by filling out the booking form on our website. Our team will help you choose the right type of LCT ship for your needs and provide a price quote."
           },
           minimumTime: {
@@ -457,7 +457,7 @@ export const en = {
         ],
         heroSubtitle: "Comprehensive solutions for your export and import needs with professional documentation and customs handling.",
         aboutTitle: "About Export & Import Services",
-        aboutContent1: "PT. Praba Samudra Logistics provides comprehensive export and import handling services to help your business penetrate global markets. We have an expert team experienced in handling various aspects of international trade, from document processing to customs and regulations.",
+        aboutContent1: "PT. Praba Samudra Logisticss provides comprehensive export and import handling services to help your business penetrate global markets. We have an expert team experienced in handling various aspects of international trade, from document processing to customs and regulations.",
         aboutContent2: "With a deep understanding of export-import procedures and regulations in various countries, we ensure your goods shipment process runs smoothly and efficiently. We also offer consultation to help you understand complex international trade requirements and regulations.",
         servicesTitle: "Export & Import Services",
         servicesList: {
@@ -531,7 +531,7 @@ export const en = {
             answer: "The time required for customs clearance varies depending on the type of goods, country of origin/destination, and completeness of documents. Generally, the process can take 1-5 business days. With our services, we strive to expedite this process as much as possible."
           },
           restrictedGoods: {
-            question: "Does PT. Praba Samudra Logistics handle goods that fall under the Restricted category?",
+            question: "Does PT. Praba Samudra Logisticss handle goods that fall under the Restricted category?",
             answer: "Yes, we handle Restricted goods and help fulfill special permit requirements needed from relevant agencies such as BPOM, Ministry of Health, or Ministry of Trade. Our team is experienced in handling various types of goods with special regulations."
           },
           customsDuty: {
@@ -539,7 +539,7 @@ export const en = {
             answer: "We can help you calculate the estimated import duty based on the HS Code (Harmonized System Code) of the goods to be imported. We also offer consultation to optimize the classification of your goods according to applicable regulations."
           },
           doorToDoor: {
-            question: "Does PT. Praba Samudra Logistics provide door-to-door service for export-import?",
+            question: "Does PT. Praba Samudra Logisticss provide door-to-door service for export-import?",
             answer: "Yes, we provide comprehensive door-to-door export-import services, from picking up goods at the sender's location, handling documents and customs, international transportation, to delivery to the final recipient's address."
           }
         },
@@ -559,7 +559,7 @@ export const en = {
         ],
         heroSubtitle: "Goods delivery services throughout Indonesia with various transportation mode options for your logistics needs.",
         aboutTitle: "About Domestic Shipping Services",
-        aboutContent1: "PT. Praba Samudra Logistics provides comprehensive domestic shipping services throughout Indonesia. With a diverse fleet and extensive network, we ensure your goods arrive safely and on time at their destination, whether to major cities or remote areas.",
+        aboutContent1: "PT. Praba Samudra Logisticss provides comprehensive domestic shipping services throughout Indonesia. With a diverse fleet and extensive network, we ensure your goods arrive safely and on time at their destination, whether to major cities or remote areas.",
         aboutContent2: "We offer various transportation mode options, including land, sea, and air, to meet your shipping needs with various levels of urgency and types of goods. Our services are also equipped with a tracking system that allows you to monitor shipment status in real-time.",
         servicesTitle: "Types of Shipping Services",
         servicesList: {
@@ -600,7 +600,7 @@ export const en = {
           }
         },
         coverageTitle: "Our Coverage",
-        coverageDescription: "PT. Praba Samudra Logistics serves delivery routes throughout Indonesia, covering major islands and cities to remote areas. Our extensive network allows us to provide efficient and reliable shipping solutions for your needs.",
+        coverageDescription: "PT. Praba Samudra Logisticss serves delivery routes throughout Indonesia, covering major islands and cities to remote areas. Our extensive network allows us to provide efficient and reliable shipping solutions for your needs.",
         destinationDistribution: "Destination Distribution",
         serviceCapabilities: "Service Capabilities",
         destinations: {
@@ -635,7 +635,7 @@ export const en = {
             answer: "You can track your shipment through our online tracking system by entering your shipment reference number on the Track Shipment page on our website. You can also contact our customer service team for the latest information."
           },
           insurance: {
-            question: "Does PT. Praba Samudra Logistics provide pick-up services?",
+            question: "Does PT. Praba Samudra Logisticss provide pick-up services?",
             answer: "Yes, we provide pick-up services from the sender's location as part of our door-to-door services. We will arrange the pick-up time according to your preferred schedule."
           },
           remoteAreas: {
@@ -659,7 +659,7 @@ export const en = {
         ],
         heroSubtitle: "Efficient and secure inter-island vehicle and cargo shipping solutions using Roll-On Roll-Off vessels.",
         aboutTitle: "About Vehicle & Cargo Shipping via Ro-Ro Ships",
-        aboutContent1: "PT. Praba Samudra Logistics provides specialized vehicle and cargo shipping services using Ro-Ro (Roll-On Roll-Off) ships for routes between ports across Indonesia. Ro-Ro vessels allow vehicles and cargo to be driven directly onto the ship without requiring heavy lifting equipment, making it an efficient, quick, and secure shipping method.",
+        aboutContent1: "PT. Praba Samudra Logisticss provides specialized vehicle and cargo shipping services using Ro-Ro (Roll-On Roll-Off) ships for routes between ports across Indonesia. Ro-Ro vessels allow vehicles and cargo to be driven directly onto the ship without requiring heavy lifting equipment, making it an efficient, quick, and secure shipping method.",
         aboutContent2: "We handle the shipping of private vehicles, trucks, motorcycles, heavy equipment, and general cargo with the support of regular shipping schedules and a professional team. Our service is practical, cost-effective, and reliable for all your inter-island vehicle and cargo transportation needs.",
         cargoTypesTitle: "Types of Vehicles & Cargo We Can Ship",
         cargoTypesTable: {
@@ -813,14 +813,14 @@ export const en = {
   },
   footer: {
     about: "About Us",
-    aboutText: "PT. Praba Samudra Logistic is an integrated logistics company offering national and international shipping services with a commitment to reliability and customer satisfaction.",
+    aboutText: "PT. Praba Samudra Logistics is an integrated logistics company offering national and international shipping services with a commitment to reliability and customer satisfaction.",
     quickLinks: "Quick Links",
     services: "Our Services",
     contact: "Contact",
     address: "Address",
     phone: "Phone",
     email: "Email",
-    copyright: "© 2025 PT. Praba Samudra Logistic. All Rights Reserved."
+    copyright: "© 2025 PT. Praba Samudra Logistics. All Rights Reserved."
   },
   paymentMethods: {
     title: "Supported Payment Methods",

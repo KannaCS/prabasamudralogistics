@@ -123,7 +123,7 @@ export default function VehicleShippingPage() {
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4 text-primary">Tentang Layanan Pengiriman Kendaraan</h2>
             <p className="text-gray-700 mb-6">
-              PT. Praba Samudra Logistic menyediakan layanan pengiriman kendaraan bermotor melalui kapal dengan basis CY-CY (Container Yard to Container Yard). 
+              PT. Praba Samudra Logistics menyediakan layanan pengiriman kendaraan bermotor melalui kapal dengan basis CY-CY (Container Yard to Container Yard). 
               Kami menangani pengiriman berbagai jenis kendaraan termasuk motor, mobil kecil, sedan, MPV, dan mobil mewah ke berbagai rute di Indonesia.
             </p>
             <p className="text-gray-700 mb-6">
