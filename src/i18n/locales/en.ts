@@ -7,7 +7,9 @@ export const en = {
     },
     notices: {
       scamWarning: "Beware of scams! Make sure to contact the official phone number listed above."
-    }
+    },
+    noResults: "No services match your search.",
+    getQuote: "Get quote"
   },
   menu: {
     home: "Home",
@@ -50,7 +52,13 @@ export const en = {
     },
     partners: {
       title: "Official Member",
-      subtitle: "Recognized and registered as an official member of prestigious industry organizations with an international reputation."
+      subtitle: "Recognized and registered as an official member of prestigious industry organizations with an international reputation.",
+      partners: {
+        associationLogisticsIndonesia: "Association of Indonesian Logistics",
+        bandarGolfKemayoran: "Bandar Golf Kemayoran",
+        collaborationLogisticsNasional: "National Logistics Collaboration",
+        kadinIndonesia: "Indonesian Chamber of Commerce"
+      }
     },
     cta: {
       title: "Ready to Get Started?",
@@ -101,6 +109,13 @@ export const en = {
       title: "Shipment Details",
       serviceType: "Service Type",
       selectService: "Select Service Type",
+      serviceOptions: {
+        freightForwarding: "Freight Forwarding",
+        truckRental: "Truck Rental",
+        shipRental: "LCT Ship Rental",
+        exportImport: "Export & Import",
+        domesticShipping: "Domestic Shipping"
+      },
       cargoType: "Cargo Type",
       cargoTypePlaceholder: "Example: Heavy Equipment, Electronics, etc.",
       origin: "Origin",
@@ -112,6 +127,7 @@ export const en = {
       dimensionsPlaceholder: "Example: 100 x 50 x 30",
       specialInstructions: "Special Instructions",
       specialInstructionsPlaceholder: "Enter special instructions if any",
+      next: "Next",
       goodsType: "Goods Type",
       hsCode: "HS Code",
       countryOrigin: "Country of Origin",
@@ -153,6 +169,16 @@ export const en = {
     },
     featureTitle: "Service Features:",
     learnMore: "Learn More",
+    searchPlaceholder: "Search services...",
+    categoryLabels: {
+      all: "All",
+      logistics: "Logistics",
+      sea: "Sea",
+      customs: "Customs",
+      domestic: "Domestic",
+      vehicle: "Vehicle"
+    },
+    serviceCount: "services",
     services: {
       freightForwarding: {
         title: "Freight Forwarding",

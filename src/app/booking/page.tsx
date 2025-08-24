@@ -275,11 +275,11 @@ export default function BookingPage() {
                             className={`w-full px-4 py-2 border rounded-md focus:ring-primary focus:border-primary ${errors.serviceType ? 'border-red-400' : 'border-gray-300'}`}
                           >
                             <option value="">{t("booking.shipmentDetails.selectService")}</option>
-                            <option value="freight-forwarding">Freight Forwarding</option>
-                            <option value="truck-rental">Sewa Truck</option>
-                            <option value="ship-rental">Sewa Kapal LCT</option>
-                            <option value="export-import">Ekspor & Impor</option>
-                            <option value="domestic-shipping">Pengiriman Domestik</option>
+                            <option value="freight-forwarding">{t("booking.shipmentDetails.serviceOptions.freightForwarding")}</option>
+                            <option value="truck-rental">{t("booking.shipmentDetails.serviceOptions.truckRental")}</option>
+                            <option value="ship-rental">{t("booking.shipmentDetails.serviceOptions.shipRental")}</option>
+                            <option value="export-import">{t("booking.shipmentDetails.serviceOptions.exportImport")}</option>
+                            <option value="domestic-shipping">{t("booking.shipmentDetails.serviceOptions.domesticShipping")}</option>
                           </select>
                           {errors.serviceType && <p className="mt-1 text-xs text-red-600">{errors.serviceType}</p>}
                         </div>

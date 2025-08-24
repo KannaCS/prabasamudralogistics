@@ -304,12 +304,12 @@ export default function Home() {
               <div className="w-full h-16 md:h-20 relative grayscale hover:grayscale-0 transition">
                 <Image
                   src="/mitra/Asosition logistics indonesia.jpg"
-                  alt="Asosiasi Logistik Indonesia"
+                  alt={t("homePage.partners.partners.associationLogisticsIndonesia")}
                   fill
                   className="object-contain"
                 />
               </div>
-              <p className="mt-3 text-sm font-medium text-gray-700 text-center">Asosiasi Logistik Indonesia</p>
+              <p className="mt-3 text-sm font-medium text-gray-700 text-center">{t("homePage.partners.partners.associationLogisticsIndonesia")}</p>
             </div>
             
             {/* Partner 2 - Bandar Golf Kemayoran */}
@@ -317,12 +317,12 @@ export default function Home() {
               <div className="w-full h-16 md:h-20 relative grayscale hover:grayscale-0 transition">
                 <Image
                   src="/mitra/Bandar golf Kemayoran.jpg"
-                  alt="Bandar Golf Kemayoran"
+                  alt={t("homePage.partners.partners.bandarGolfKemayoran")}
                   fill
                   className="object-contain"
                 />
               </div>
-              <p className="mt-3 text-sm font-medium text-gray-700 text-center">Bandar Golf Kemayoran</p>
+              <p className="mt-3 text-sm font-medium text-gray-700 text-center">{t("homePage.partners.partners.bandarGolfKemayoran")}</p>
             </div>
             
             {/* Partner 3 - National Logistics Collaboration */}
@@ -330,12 +330,12 @@ export default function Home() {
               <div className="w-full h-16 md:h-20 relative grayscale hover:grayscale-0 transition">
                 <Image
                   src="/mitra/Collaboration logistics nasional.jpg"
-                  alt="Kolaborasi Logistik Nasional"
+                  alt={t("homePage.partners.partners.collaborationLogisticsNasional")}
                   fill
                   className="object-contain"
                 />
               </div>
-              <p className="mt-3 text-sm font-medium text-gray-700 text-center">Kolaborasi Logistik Nasional</p>
+              <p className="mt-3 text-sm font-medium text-gray-700 text-center">{t("homePage.partners.partners.collaborationLogisticsNasional")}</p>
             </div>
             
             {/* Partner 4 - Indonesian Chamber of Commerce */}
@@ -343,12 +343,12 @@ export default function Home() {
               <div className="w-full h-16 md:h-20 relative grayscale hover:grayscale-0 transition">
                 <Image
                   src="/mitra/Kadin.jpg"
-                  alt="Kamar Dagang dan Industri Indonesia"
+                  alt={t("homePage.partners.partners.kadinIndonesia")}
                   fill
                   className="object-contain"
                 />
               </div>
-              <p className="mt-3 text-sm font-medium text-gray-700 text-center">Kadin Indonesia</p>
+              <p className="mt-3 text-sm font-medium text-gray-700 text-center">{t("homePage.partners.partners.kadinIndonesia")}</p>
             </div>
           </div>
         </div>

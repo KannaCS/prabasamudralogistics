@@ -7,7 +7,9 @@ export const jp = {
     },
     notices: {
       scamWarning: "詐欺にご注意ください！必ず上記に記載された公式電話番号にご連絡ください。"
-    }
+    },
+    noResults: "検索条件に一致するサービスがありません。",
+    getQuote: "見積もりを取得"
   },
   menu: {
     home: "ホーム",
@@ -50,7 +52,13 @@ export const jp = {
     },
     partners: {
       title: "正式会員",
-      subtitle: "国際的に高い評価を受ける名門業界団体の正式会員として認定・登録されています。"
+      subtitle: "国際的に高い評価を受ける名門業界団体の正式会員として認定・登録されています。",
+      partners: {
+        associationLogisticsIndonesia: "インドネシア物流協会",
+        bandarGolfKemayoran: "バンダー・ゴルフ・ケマヨラン",
+        collaborationLogisticsNasional: "国家物流協力",
+        kadinIndonesia: "インドネシア商工会議所"
+      }
     },
     cta: {
       title: "始める準備はできましたか？",
@@ -101,6 +109,13 @@ export const jp = {
       title: "配送詳細",
       serviceType: "サービスタイプ",
       selectService: "サービスタイプを選択",
+      serviceOptions: {
+        freightForwarding: "フレイトフォワーディング",
+        truckRental: "トラックレンタル",
+        shipRental: "LCT船舶レンタル",
+        exportImport: "輸出入",
+        domesticShipping: "国内配送"
+      },
       cargoType: "貨物タイプ",
       cargoTypePlaceholder: "例：重機、電子機器など",
       origin: "出発地",
@@ -112,6 +127,7 @@ export const jp = {
       dimensionsPlaceholder: "例：100 x 50 x 30",
       specialInstructions: "特別指示",
       specialInstructionsPlaceholder: "特別な指示があれば入力してください",
+      next: "次へ",
       goodsType: "商品タイプ",
       hsCode: "HSコード",
       countryOrigin: "原産国",
@@ -153,6 +169,16 @@ export const jp = {
     },
     featureTitle: "サービス特徴：",
     learnMore: "詳細を見る",
+    searchPlaceholder: "サービスを検索...",
+    categoryLabels: {
+      all: "すべて",
+      logistics: "ロジスティクス",
+      sea: "海運",
+      customs: "税関",
+      domestic: "国内",
+      vehicle: "車両"
+    },
+    serviceCount: "サービス",
     services: {
       freightForwarding: {
         title: "フレイトフォワーディング",

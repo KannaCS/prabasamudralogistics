@@ -7,7 +7,9 @@ export const id = {
     },
     notices: {
       scamWarning: "Hati-hati penipuan! Pastikan Anda menghubungi nomor telepon resmi yang tercantum di atas."
-    }
+    },
+    noResults: "Tidak ada layanan yang cocok dengan pencarian Anda.",
+    getQuote: "Dapatkan penawaran"
   },
   menu: {
     home: "Beranda",
@@ -50,7 +52,13 @@ export const id = {
     },
     partners: {
       title: "Anggota Resmi",
-      subtitle: "Diakui dan tercatat sebagai anggota resmi pada organisasi industri bergengsi yang memiliki reputasi internasional."
+      subtitle: "Diakui dan tercatat sebagai anggota resmi pada organisasi industri bergengsi yang memiliki reputasi internasional.",
+      partners: {
+        associationLogisticsIndonesia: "Asosiasi Logistik Indonesia",
+        bandarGolfKemayoran: "Bandar Golf Kemayoran",
+        collaborationLogisticsNasional: "Kolaborasi Logistik Nasional",
+        kadinIndonesia: "Kamar Dagang dan Industri Indonesia"
+      }
     },
     cta: {
       title: "Siap Untuk Memulai?",
@@ -101,6 +109,13 @@ export const id = {
       title: "Detail Pengiriman",
       serviceType: "Jenis Layanan",
       selectService: "Pilih Jenis Layanan",
+      serviceOptions: {
+        freightForwarding: "Freight Forwarding",
+        truckRental: "Sewa Truck",
+        shipRental: "Sewa Kapal LCT",
+        exportImport: "Ekspor & Impor",
+        domesticShipping: "Pengiriman Domestik"
+      },
       cargoType: "Jenis Kargo",
       cargoTypePlaceholder: "Contoh: Alat Berat, Barang Elektronik, dll.",
       origin: "Asal",
@@ -112,6 +127,7 @@ export const id = {
       dimensionsPlaceholder: "Contoh: 100 x 50 x 30",
       specialInstructions: "Instruksi Khusus",
       specialInstructionsPlaceholder: "Masukkan instruksi khusus jika ada",
+      next: "Selanjutnya",
       goodsType: "Jenis Barang",
       hsCode: "HS Code",
       countryOrigin: "Negara Asal",
@@ -153,6 +169,16 @@ export const id = {
     },
     featureTitle: "Fitur Layanan:",
     learnMore: "Pelajari Lebih Lanjut",
+    searchPlaceholder: "Cari layanan...",
+    categoryLabels: {
+      all: "Semua",
+      logistics: "Logistik",
+      sea: "Laut",
+      customs: "Bea Cukai",
+      domestic: "Domestik",
+      vehicle: "Kendaraan"
+    },
+    serviceCount: "layanan",
     services: {
       freightForwarding: {
         title: "Freight Forwarding",

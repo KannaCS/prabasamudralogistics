@@ -15,15 +15,6 @@ type Service = {
   category: string;
 };
 
-const CATEGORY_LABELS: Record<string, string> = {
-  all: "Semua",
-  logistics: "Logistik",
-  sea: "Laut",
-  customs: "Bea Cukai",
-  domestic: "Domestik",
-  vehicle: "Kendaraan",
-};
-
 export default function ServicesPage() {
   const { t } = useLanguage();
 
@@ -113,6 +104,10 @@ export default function ServicesPage() {
     });
   }, [activeCategory, query, baseServices]);
 
+  const getCategoryLabel = (category: string) => {
+    return t(`servicesPage.categoryLabels.${category}`) || category;
+  };
+
   return (
     <div className="services-page relative">
       {/* Hero with gradient background */}
@@ -155,7 +150,7 @@ export default function ServicesPage() {
                 }`}
                 aria-pressed={activeCategory === cat}
               >
-                {CATEGORY_LABELS[cat] || cat}
+                {getCategoryLabel(cat)}
               </button>
             ))}
           </div>
@@ -167,7 +162,7 @@ export default function ServicesPage() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               type="text"
-              placeholder={t("servicesPage.searchPlaceholder") || "Cari layanan..."}
+              placeholder={t("servicesPage.searchPlaceholder")}
               className="w-full rounded-lg bg-white/5 border border-white/10 pl-9 pr-3 py-2.5 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-400/70"
               aria-label="Search services"
             />
@@ -178,9 +173,9 @@ export default function ServicesPage() {
       {/* Services Grid */}
       <section className="bg-gray-50 py-14">
         <div className="container mx-auto px-4">
-          <div className="mb-6 text-sm text-gray-600">{filtered.length} layanan</div>
+          <div className="mb-6 text-sm text-gray-600">{filtered.length} {t("servicesPage.serviceCount")}</div>
           {filtered.length === 0 ? (
-            <p className="text-center text-gray-600">{t("common.noResults") || "No services match your search."}</p>
+            <p className="text-center text-gray-600">{t("common.noResults")}</p>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {filtered.map((service) => (
@@ -196,7 +191,7 @@ export default function ServicesPage() {
                     />
                     <div className="absolute left-3 top-3 flex items-center gap-2">
                       <span className="inline-flex items-center rounded-full bg-black/60 px-3 py-1 text-xs font-medium text-white backdrop-blur">
-                        {CATEGORY_LABELS[service.category] || service.category}
+                        {getCategoryLabel(service.category)}
                       </span>
                     </div>
                   </div>
@@ -222,7 +217,7 @@ export default function ServicesPage() {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L13.586 11H4a1 1 0 110-2h9.586l-3.293-3.293a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
                       </Link>
                       <Link href="/booking" className="text-sm font-medium text-primary hover:text-primary-700">
-                        {t("common.getQuote") || "Get quote"}
+                        {t("common.getQuote")}
                       </Link>
                     </div>
                   </div>
